@@ -1,0 +1,33 @@
+.. title:: CINEMAS-Python editor
+.. _pyeditor:
+
+
+
+CINEMAS-Python Editor
+======================
+.. |run_load_button| image:: _static/run_load_button.png
+.. |run_button| image:: _static/run_python.png
+.. |clear_python| image:: _static/clear_python.png
+.. |new_python| image:: _static/new_python.png
+.. |save_python| image:: _static/save_python.png
+.. |kill_python| image:: _static/kill-python-button.png
+.. |bg_python| image:: _static/bg_color_python.png
+
+Details of the Python editor toolbar:
+
+- |new_python| button is used to create a new tab in the editor.
+- |save_python| button is used to save the current tab in the editor.
+- |clear_python| button is used to clear the output pan.
+- Run button |run_button| is used to execute a program.
+- Run-load button |run_load_button| is used to execute the program and load the generated files, if any.
+- |kill_python| button kills a running Python instance.
+  This button will be enabled only if a Python instance is running in that tab, else will be disabled.
+- Clicking |bg_python| button, background and font color for CINEMAS-Python editor can be set, separately for editor and output pan.
+
+
+.. figure:: _static/set_bg_color.png
+        :alt: set_bg_python
+        :align: center
+        :scale: 60%
+
+        CINEMAS-Python editor: window to set color for the background and the font, for editor and output pan separately.

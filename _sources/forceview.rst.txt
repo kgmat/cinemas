@@ -1,0 +1,67 @@
+.. title:: Visualize Forces in CINEMAS
+.. _force_view:
+
+
+=========================================================================
+How to visualize forces on atoms from a computed structure(*Force-View*)
+=========================================================================
+
+- CINEMAS can visualize the forces('TOTAL-FORCE' from OUTCAR file for VASP code) directly from the output files.
+- From a workflow containing valid files, if a structure is visualized in CINEMAS-view.
+- One can go to **Force-view** tab in *Style option* on the right side of the CINEMAS-view window.
+- If workflow contains an erroneous calculation, CINEMAS will not find any valid forces, and **Mag-view** category will remain disabled.
+- Appearance of arrows can be customized collectively, for individual species.
+- Arrow/tip length/radius can be scaled.
+- Arrow/tip color can be changed. 
+
+- Additionally, by double-click on an arrow, displays the value of the force-vector for a particular species.
+
+.. figure:: _static/force1.png
+   :name: force1
+   :align: center
+   :scale: 50%
+
+   'Force-view' in CINEMAS-view, visualizing forces on a computed structure. 
+
+.. figure:: _static/force2.png
+   :name: force2
+   :align: center
+   :scale: 50%
+
+   Double-click on an arrow displays the vector representing the force on a species.
+   
+.. figure:: _static/force3.png
+   :name: force3
+   :align: center
+   :scale: 50%
+
+   Color properties, arrow/tip length or radius can be changed as per user-requirements. 
+
+.. figure:: _static/force4.png
+   :name: force4
+   :align: center
+   :scale: 60%
+   
+   **Force-view** category in the *Style options* within CINEMAS-view. Different properties can be controlled from here.
+
+.. figure:: _static/force5.png
+   :name: force5
+   :align: center
+   :scale: 60%
+   
+   Atom-resolved properties can also be set for 'force-arrows'.
+
+.. figure:: _static/force6.png
+   :name: force6
+   :align: center
+   :scale: 50%
+   
+   An example of a workflow containing only input files. So OUTCAR is not present and **Force-view** category is disabled automatically.
+
+.. figure:: _static/force7.png
+   :name: force7
+   :align: center
+   :scale: 50%
+   
+   An example where the workflow contains valid and complete calculation, but forces are **Zero**. Category is enabled, but no arrows are displayed in this case.
+

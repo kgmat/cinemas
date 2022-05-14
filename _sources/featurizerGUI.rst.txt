@@ -1,0 +1,12 @@
+.. title:: Featurizer in CINEMAS an interface to Matminer
+.. _featurizer-auto-module:
+
+
+========================================================================
+How to use Featurizer in CINEMAS: an interface to Matminer
+========================================================================
+
+- :ref:`Start from composition<Featurize from composition>`
+
+Featurize from composition
+=================================================================

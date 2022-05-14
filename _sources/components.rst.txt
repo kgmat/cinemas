@@ -1,0 +1,18 @@
+.. title:: CINEMAS-components
+.. _cin-components:
+
+==================================
+Components of CINEMAS application
+==================================
+
+.. toctree::
+    cascade
+
+.. toctree::
+    cinemasview
+
+.. toctree::
+    cinemasplot
+
+.. toctree::
+    cinemasdraw

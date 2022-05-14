@@ -1,0 +1,120 @@
+.. title:: CINEMAS: Worflows, Visualizer, Plotter, Drawer
+
+.. image:: _static/cinemas_logo.png
+   :alt: CINEMAS logo
+   :scale: 20%
+   :align: center 
+
+..
+    =======
+    CINEMAS
+    =======
+
+    Introduction
+    ==============
+
+There has been a paradigm shift in the last few years, in the domain of computational materials science. 
+Efficient computational resources are enabling researchers to generate a large amount of data. Moreover, 
+advancement in data science techniques is making it possible to interpret a large amount of data for 
+certain materials property as well as predicting new materials. A number of highly efficient applications 
+are being developed to handle a huge number of calculations altogether.
+
+CINEMAS has been conceptualized to facilitate calculations through an easy-to-use integrated graphical 
+user interface(GUI). CINEMAS can prepare, execute, and manage tens of thousands of calculations from a single canvas. 
+CINEMAS can perform Density Functional Theory(DFT) calculations 
+primarily and also secondary calculations additionally, using DFT output data. Several required tools 
+such as visualizer, plotter, connections, file-transfer, drawing are stitched together to build CINEMAS 
+as an integrated efficient-GUI based platform.
+
+CINEMAS has the same design for its user-interface, screenshots from the supported OSs(Windows,Linux, and MacOS) are shown throughout the documentation.
+
+.. figure:: _static/abstract.png
+   :alt: abstract
+   :align: center
+   :scale: 40%
+
+   CINEMAS concept(present and future).
+
+.. toctree::
+    :maxdepth: 10
+    :caption: CINEMAS-components:
+    :hidden:
+
+    components
+
+.. toctree::
+    :maxdepth: 10
+    :caption: Download CINEMAS:
+    :hidden:
+
+    download
+
+.. toctree::
+    :maxdepth: 10
+    :caption: How to Install:
+    :hidden:
+
+    installation
+
+
+.. toctree::
+    :maxdepth: 4
+    :caption: CINEMAS gallery:
+    :hidden:
+
+    gallery
+
+ How to cite CINEMAS?
+ =======================
+
+Users can cite following paper to acknowledge the use and encourage the further development of CINEMAS:
+
+    | Kapil Gupta, Satadeep Bhattacharjee, and Seung-Cheol Lee,
+    | *CINEMAS: Comprehensively INtegrated Environment for advanced MAterials Simulations*
+    | Computational Materials Science **188**,110238 (2021).
+    | `https://doi.org/10.1016/j.commatsci.2020.110238 <https://doi.org/10.1016/j.commatsci.2020.110238>`_ 
+
+
+.. 
+	=============
+	What's new?
+	=============
+	Current version of CINEMAS is 2.0.xx.
+..
+	.. toctree::
+	    :maxdepth: 4
+	    :caption: CINEMAS version history:
+..
+	    changelogs
+
+
+.. toctree::
+    :maxdepth: 4
+    :caption: License:
+    :hidden:
+
+    license
+
+CINEMAS is distributed free of cost. Users can find full license :doc:`here</license>`
+
+The latest version of CINEMAS for your choice of OS can be downloaded from `here <https://ikst.res.in/cinemas/download>`_.
+
+A `user-forum <https://ikst.res.in/cinemas/discussion-forum>`_ is available for questions/queries/help on CINEMAS platform.
+
+.. toctree::
+    :maxdepth: 4
+    :caption: CINEMAS Help:
+    :hidden:
+
+    help
+
+.. toctree::
+    :maxdepth: 4
+    :caption: The CINEMAS team:
+    :hidden:
+
+    team
+
+
+
+

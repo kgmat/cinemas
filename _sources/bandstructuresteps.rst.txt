@@ -1,0 +1,157 @@
+.. title:: Band-structure steps
+.. _bandstructuresteps:
+
+
+
+Guide to CINEMAS-bandstructure module
+=====================================
+
+        - :ref:`Start from scratch. <Bandstructure from scratch using a strcture file>`
+        - :ref:`Start with a blank template. <Bandstructure from a blank template>`
+
+Bandstructure from scratch using a structure file
+-------------------------------------------------
+
+*       **Initiate Bandstructure module:**
+
+        Bandstructure module can be initiated from CASCADE toolbar by clicking XXX icon.
+
+       .. figure:: _static/band1.png
+                :name: band1
+                :align: center
+                :scale: 80%
+
+                CINEMAS: Connections and file-transfer between local machine and remote server with multiple hops through several gateways.
+
+All the automatic modules within CINEMAS always look for at least an active connection established to a remote server.
+However, workflows and input files therein can be created automatically, but to be submitted manually.
+
+       .. figure:: _static/band2.png
+                :name: band2
+                :align: center
+                :scale: 80%
+
+                Module looking for an active connection to a remote server.
+
+*       **Load the structure:**
+
+        Browse a single or multiple structure file(s) from disk. In the current version of CINEMAS supported structure
+        file formats are :math:`\texttt{POSCAR/*.vasp/*.cif/*.in/*.xsf}`.
+
+*       **Settings for input-files:**
+
+        .. figure:: _static/band3.png
+                :name: band3_band
+                :align: center
+                :scale: 80%
+
+                Snapshot of window showing CINEMAS **default** settings to prepare rest of the input files.
+
+        - In :numref:`band3_band`, the first field is a list of established(if any) connections.
+        - In 'default' mode workflow is submitted automatically to a connection marked as default in *connection* workspace.
+        - In *default* mode, all the setting fields will be disabled and show parameters in 'read-only' mode.
+        - Setting-mode has to be changed to *user* mode to make customized settings.
+        - In the *user* mode of settings, remote server can be selected from a list of established connections as show in the figure below.
+        - As well as all the setting fields can be set to desired parameters.
+        - Additionally *Save* and *Load* buttons are enabled, and can be used to save user-settings as a template or to load a saved one.
+
+       .. figure:: _static/band4.png
+                :name: band4
+                :align: center
+                :scale: 80%
+
+                Snapshot of window showing CINEMAS **user** settings to prepare rest of the input files.
+
+*       **Automatic creation of high symmetry k-path in Brillouin Zone**
+
+        - For bandstructure calculations CINEMAS module automatically chooses k-path in Brillouin zone and writes to a :math:`\texttt{KPOINTS}` (for VASP) file.
+        - This is performed by utilizing `HighSymmKpath <https://pymatgen.org/pymatgen.symmetry.bandstructure.html#pymatgen.symmetry.bandstructure.HighSymmKpath>`_ class of pymatgen.symmetry.bandstructure module.
+*       **Automatic creation of workflows:**
+
+        - Once settings-mode is defined/selected, workflows are created automatically.
+        - CINEMAS Bandstructure module includes a relaxation and a dependent band-structure calculation.
+        - By default *relaxation* workflow is shown collapsed, while *band* one is expanded(:numref:`band5`).
+        - However can be expanded at user's choice(:numref:`band6`).
+        - A single band module can have a single structure(:numref:`band5`, :numref:`band6`) or multiple(:numref:`band7`, :numref:`band8`) structures.
+
+
+       .. figure:: _static/band5.png
+                :name: band5
+                :align: center
+                :scale: 80%
+
+                By default, *Relax* workflow is collapsed.
+
+       .. figure:: _static/band6.png
+                :name: band6
+                :align: center
+                :scale: 80%
+
+                *Relax* workflow can be expanded by double click.
+
+       .. figure:: _static/band7.png
+                :name: band7
+                :align: center
+                :scale: 80%
+
+                Collapsed view of multiple structures loaded to calculate bandstructure.
+
+       .. figure:: _static/band8.png
+                :name: band8
+                :align: center
+                :scale: 80%
+
+                Expanded view of multiple structures loaded to calculate bandstructure.
+
+.. |plot| image:: _static/plot.png
+
+*       **Post-process bandstructure:**
+
+        - Once over, a quick-view of bandstructure will be available from *Snapshot* workspace.
+
+        .. figure:: _static/band9.png
+                :name: band9
+                :align: center
+                :scale: 80%
+
+                Quick-view of bandstructure plot from **Snapshot** workspace.
+
+        - The button |plot| redirects to *Analysis* workspace for a user-customized bandstructure plot and to prepare publication-quality figures.
+
+        .. figure:: _static/band10.png
+                :name: band10
+                :align: center
+                :scale: 80%
+
+                **Analysis** workspace for filtering data, and making a customized bandstructure plot.
+
+        .. figure:: _static/band11.png
+                :name: band11
+                :align: center
+                :scale: 80%
+
+                **Single-click plot & data**: Tabular bandstructure data resolved by band indices and a corresponding plot.
+
+* You can find a tutorial below explaining the functioning of *Bandstructure* module in CINEMAS.
+
+    .. raw:: html
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/s8LatjV8Zhs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Bandstructure from a blank template
+-------------------------------------
+
+        .. figure:: _static/band12.png
+                :name: band12
+                :align: center
+                :scale: 80%
+
+                A blank template of Bandstructure module.
+
+        - Alternatively, as shown in :numref:`band1` option of empty template can be selected.
+        - A blank template of bandstructure module is created(:numref:`band12`).
+        - Other workflows can be imported inside these templates, by:
+
+                - Copy/Paste method.
+                - Drag and drop other workflows.
+                - Select a empty workflow of blank template, and import a calculation from disk into it.

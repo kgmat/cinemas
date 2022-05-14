@@ -1,0 +1,10 @@
+.. title:: Setup connection
+.. _setup-connection:
+
+
+=========================================
+Establish connection to remote server(s)
+=========================================
+
+Input-file preparation dialogue box creates files in the order of **Structure-->K-points-->Potential-->Instructions**, which in the case of VASP
+translates to the order **POSCAR-->KPOINTs-->POTCAR-->INCAR**.

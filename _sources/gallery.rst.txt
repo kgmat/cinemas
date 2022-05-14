@@ -1,0 +1,226 @@
+.. title:: CINEMAS-gallery
+.. _cinemas-gallery:
+
+==================
+CINEMAS Gallery
+==================
+
+CASCADE snaps
+==============
+.. figure:: _static/jobicon.png
+   :alt: jobicon
+   :align: center
+   :scale: 60%
+
+   Description of a workflow-icon. 
+
+.. figure:: _static/cascade1.png
+   :alt: cascade-1
+   :align: center
+
+   A view of independent and dependent workflows. Color codes are provided for an easy guide to eyes. 
+
+
+CINEMAS-view snaps
+===================
+
+Visualizer
+------------
+
+.. figure:: _static/zeolite.png
+   :alt: cascade-1
+   :align: center
+   :scale: 50%
+
+   CINEMAS-view: Zeolite structure assuming pure SiO\ :sub:`2`\  phase in SZR framework, blue(Si) and red(O).
+
+.. figure:: _static/hybrid.png
+   :alt: cascade-1
+   :align: center
+   :scale: 50%
+
+   CINEMAS-view: Visualization of hybrid perovskite CH\ :sub:`3`\  NH\ :sub:`3`\  PbI\ :sub:`3`\  , brown(C), pink(H), light grey(N), dark grey(Pb) and magenta(I).
+
+
+Fermi-Surface
+---------------
+
+.. figure:: _static/al-fermi.png
+   :name: fermi-1
+   :align: center
+   :scale: 50%
+
+   CINEMAS-view: Visualization of Fermi-surface for Al-Bulk(non-magnetic configuration).
+
+.. figure:: _static/Cu-fermi-surface.png
+   :name: fermi-2
+   :align: center
+   :scale: 40%
+
+   CINEMAS-view: Visualization of Fermi-surface for Cu-Bulk(non-magnetic configuration).
+
+.. figure:: _static/ti-fermi-surface.png
+   :name: fermi-3
+   :align: center
+   :scale: 30%
+
+   CINEMAS-view: Visualization of Fermi-surface for Ti-Bulk(non-magnetic configuration).
+
+
+Structure-Manager
+--------------------
+
+.. figure:: _static/611-new.png
+   :alt: 611
+   :align: center
+   :scale: 50%
+
+   Structure Manager: high-index [611] surface of SrTiO\ :sub:`3`\  , green(Sr), cyan(Ti) and red(O).
+
+.. figure:: _static/mirror.png
+   :alt: mirror
+   :align: center
+   :scale: 50%
+
+   Structure Manager: Application of mirror symmetry along XY-plane of [111] surface cell of SrTiO\ :sub:`3`\.
+
+.. figure:: _static/001.png
+   :alt: surf-1
+   :align: center
+   :scale: 50%
+
+   Structure Manager: Input Miller indices for a desired surface. 
+
+.. figure:: _static/002.png
+   :alt: cascade-1
+   :align: center
+   :scale: 50%
+
+   Structure Manager: Drag the plane for desired termination.
+
+.. figure:: _static/003.png
+   :alt: cascade-1
+   :align: center
+   :scale: 50%
+
+   Structure Manager: Drag arrows to have desired in-plane vectors.
+
+.. figure:: _static/006.png
+   :alt: cascade-1
+   :align: center
+   :scale: 50%
+
+   Structure Manager: Surface cell(periodic and normal vectors).
+
+.. figure:: _static/007.png
+   :alt: cascade-1
+   :align: center
+   :scale: 50%
+
+   Structure Manager: Periodic-bulk like surface cell(with least number of atoms).
+
+.. figure:: _static/010.png
+   :alt: cascade-1
+   :align: center
+   :scale: 50%
+
+   Structure Manager: Non-periodic slab-like surface cell.
+
+.. figure:: _static/014.png
+   :alt: cascade-1
+   :align: center
+   :scale: 50%
+
+   Structure Manager: Non-periodic slab-like symmetric surface cell with layers centered.
+
+CINEMAS-plot snaps
+===================
+
+Tables
+--------
+
+.. figure:: _static/plot4.png
+   :name: plot4_gallery
+   :align: center
+   :scale: 60%
+
+   CINEMAS-plot table: Available options for tables.
+
+.. figure:: _static/plot2.png
+   :name: plot2_gallery
+   :align: center
+   :scale: 40%
+
+   CINEMAS-plot table: color highlighting and available statistical operations.
+
+
+
+.. figure:: _static/plot5.png
+   :name: plot5_gallery
+   :align: center
+   :scale: 50%
+
+   CINEMAS-plot tables: Nested CSV loaded as a table, See column #5.
+
+Graphs:
+--------
+
+.. figure:: _static/pie+column.png
+   :alt: piecol
+   :align: center
+   :scale: 60%
+
+   A sample graph from data driven computations. 
+
+.. figure:: _static/plot1.png
+   :name: plot1_gallery
+   :align: center
+   :scale: 60%
+
+   CINEMAS-plot: appearance of table/graph window.
+
+.. figure:: _static/plot3.png
+   :name: plot3_gallery
+   :align: center
+   :scale: 40%
+
+   CINEMAS-plot: Graph window in full-screen mode.
+
+
+
+CINEMAS-draw snapshots
+=======================
+
+.. figure:: _static/drawsample1.png
+   :alt: drawsample1
+   :align: center
+   :scale: 60%
+
+   A sample drawing created and exported from CINEMAS-draw. Structure shown is directly exported from CINEMAS-view. 
+
+
+CINEMAS-Py Editor
+======================
+
+.. figure:: _static/pyed1.png
+   :alt: pyed1
+   :align: center
+   :scale: 50%
+
+   An example of Python script executed from CINEMAS-Python editor using Matminer package, to featurize a list of compositions.
+
+.. figure:: _static/pyed2.png
+   :alt: pyed2
+   :align: center
+   :scale: 40%
+
+   An example of running Phonopy scripts using its Python API from CINEMAS-Python editor. This script shown here is taken from Phonopy-examples.
+
+.. figure:: _static/pyed3.png
+   :alt: pyed3
+   :align: center
+   :scale: 40%
+
+   An example of Python script execution from CINEMAS editor, querying a dataset available within Matminer.
+
+

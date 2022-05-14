@@ -1,0 +1,98 @@
+.. title:: Automatic 'Dielectric' module in CINEMAS
+.. _dielectric-auto-module:
+
+
+========================================================================
+How to use Dielectric automatic module
+========================================================================
+
+- :ref:`Start from a structure file.<Calculate Dielectric constants from scratch using a structure file>`
+- :ref:`Start with a blank template.<Calculate Dielectric constants from a bank template>`
+
+Calculate Dielectric constants from scratch using a structure file
+====================================================================
+
+*       **Initiate 'Dielectric' module:** 'Dielectric' module can be initiated from CASCADE toolbar by clicking XXX icon as shown in :numref:`dielectric1`.
+
+       .. figure:: _static/dielectric1.png
+                :name: dielectric1
+                :align: center
+                :scale: 30%
+
+                Invoke 'Dielectric' module.
+
+*       **Name 'Dielectric' module:** To start from a structure file, corresponding option has to be selected. If before performing the calculation for dielectric constants, structure is to be relaxed option to relax the structure has to be checked.
+
+        .. figure:: _static/dielectric2.png
+                 :name: dielectric2
+                 :align: center
+                 :scale: 50%
+
+                 Name the 'Dielectric' module and select other options.
+
+*       **Browse a supported structure file:** At the next step, a structure file in a format supported by CINEMAS is to be browsed. CINEMAS in its current version supports :math:`\texttt{POSCAR/*.vasp/*.cif/*.in/*.xsf}` formats.
+
+        .. figure:: _static/dielectric3.png
+                 :name: dielectric3
+                 :align: center
+                 :scale: 40%
+
+                 Browse a structure file from the disk.
+
+*       **Settings for the calculation(s):** Next, a dialog box is popped up showing default settings, the user can either accept these by clicking 'OK' button or make their settings in 'user settings' mode as shown in the :numref:`dielectric5`
+
+        .. figure:: _static/dielectric5.png
+                 :name: dielectric5
+                 :align: center
+                 :scale: 50%
+
+                 Accept default settings or make your specific settings.
+
+*       **Creation of workflows:** At the next step, immediately a workflow is created with a single calculation if 'relax' option is not selected. Or a parent-child workflow with two calculations is created, one for relaxation of the structure and the other to compute the dielectric constants. See :numref:`dielectric4`
+
+        .. figure:: _static/dielectric4.png
+                 :name: dielectric4
+                 :align: center
+                 :scale: 50%
+
+                 Creation of workflows.
+
+
+*       **Submission on compute server:** The workflow, as mentioned above is created and submitted to a chosen compute server at the same time without any user intervention as shown in :numref:`dielec`(left, and middle). User can track the progress of the computation in the 'queue' workspace as shown in :numref:`dielec`(right).
+
+        .. figure:: _static/dielec.png
+                 :name: dielec
+                 :align: center
+                 :scale: 50%
+
+                 File-transfer to remote server, execution of job, and job management from the 'Queue' window.
+
+*       **Automatic download of output files:** Once the computation is over for VASP code, OSZICAR and OUTCAR files are downloaded automatically. As these file are required to obtain information about iterations and piezoelectric tensor, respectively.
+
+        .. figure:: _static/dielectric9.png
+                 :name: dielectric9
+                 :align: center
+                 :scale: 50%
+
+                 Automatic downloading of output files.
+
+*       **Post-processing and extraction of elastic constants:** With a single click on the **%** icon on the module window, dielectric constants  and elements of piezoelectric tensor are displayed as shown in the :numref:`dielectric10`.
+
+        .. figure:: _static/dielectric10.png
+                 :name: dielectric10
+                 :align: center
+                 :scale: 50%
+
+                 Post processing of the calculation, and extraction of dielectric constants, and piezoelectric tensor.
+
+
+* You can find a tutorial below explaining the functioning of *Elastic* module in CINEMAS.
+
+
+
+  .. raw:: html
+
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/-haMxXPBIFw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Calculate Dielectric constants from a bank template
+==================================================

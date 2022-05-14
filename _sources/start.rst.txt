@@ -1,0 +1,65 @@
+.. title:: Start with CINEMAS
+.. _start:
+
+.. |adddisabled| image:: _static/addjobdisabled.png
+.. |addactive| image:: _static/addjobactive.png
+
+============================
+How to start with CINEMAS
+============================
+
+One can start with CINEMAS in multiple ways:
+
+1) By creating a new CINEMAS project.
+2) By opening an existing CINEMAS project.
+3) By loading DFT-engine(as of now VASP) input and selected output files in CINEMAS.
+4) By importing existing calculation(s) from the disk.
+5) By importing VASP-input files to CINEMAS from materials-project interface.
+
+Create/open a new CINEMAS project
+===================================
+
+A new CINEMAS project can be created from *File* menu by clicking **Create project** or short-cut key **Ctrl+N**.
+
+.. figure:: _static/create1.png
+   :alt: create1
+   :align: center
+   :scale: 100%
+
+   Creating a new CINEMAS project.
+
+Once a project is created, on **CASCADE** window icon |adddisabled| becomes active as |addactive| and empty workflows can be created by clicking the same. Functions of workflow icon can be found :ref:`here<Workflows>`.
+
+From the workflows, :ref:`input files can be created<How to create input files?>`, visualized and calculations can be executed over a :ref:`remote compute-server with a valid connection<Establish connection to remote server(s)>`.
+
+
+
+Load DFT-engine input/output file(s)
+======================================
+
+
+.. figure:: _static/openfile1.png
+   :alt: openfile1
+   :align: center
+   :scale: 100%
+
+   Starting by opening DFT-engine based input/output file.
+
+.. figure:: _static/openfile2.png
+   :alt: openfile2
+   :align: center
+   :scale: 80%
+
+   Supported formats for opening input/output files.
+
+
+Import existing calculation(s)
+===============================
+
+:ref:`CINEMAS can import directories<From disk>` containing existing calculations. User can further analyze/re-do the calculations.
+
+
+Import VASP input files from materials-project to CINEMAS
+===========================================================
+
+CINEMAS can also :ref:`import VASP input files or import structure from Materials-project<From Materials-project>`. User can start again from these input files. 

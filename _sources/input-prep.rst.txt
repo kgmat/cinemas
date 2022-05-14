@@ -1,0 +1,129 @@
+.. title:: Input-files Preparation
+.. _input-prep:
+
+
+============================
+How to create input files?
+============================
+
+Input-file preparation dialogue box creates files in the order of **Structure-->K-points-->Potential-->Instructions**, which in the case of VASP
+translates to the order **POSCAR-->KPOINTs-->POTCAR-->INCAR**.
+
+1) **Structure:**
+
+- CINEMAS can create a structure file from the scratch by taking symmetry and site information, or load structure files from several formats such as .xsf(XCrysden), .vasp(VASP), .in(Quantum Espresso), .cif and etc. Generation of a structure from the scratch is performed using :ref:`spglib<Spglib license>`, while cif format is handled using :ref:`pymatgen<Pymatgen license>` libraries. 
+
+- Once symmetry/site data or a file-form-disk is exported, further atomic sites can be added or deleted or degree-of-freedom for structural relaxation can be restricted(the same can be done from :ref:`structure manager<Structure Manager>` side as well).
+
+.. figure:: _static/structure-1.png
+   :alt: structure-1
+   :align: center
+   :scale: 80%
+
+   Input-files: Creating structure from the scratch by supplying symmetry/site information(an example of SrTiO\ :sub:`3`\  for spacegroup :math:`Pm\bar{3}m` with no. 221).
+
+.. figure:: _static/structure-2.png
+   :alt: structure-2
+   :align: center
+   :scale: 80%
+
+   Input-files: Exporting the information and generating full structure of SrTiO\ :sub:`3`\.
+
+.. figure:: _static/structure-3.png
+   :alt: structure-3
+   :align: center
+   :scale: 80%
+
+   Input-files: Restrict degree of freedom by selecting 'selective dynamics' at the left bottom, and check the boxes to restrict the atom.
+
+.. figure:: _static/structure-4.png
+   :alt: structure-4
+   :align: center
+   :scale: 70%
+
+   Input-files: Alternatively load structure file from different formats.
+
+
+2) **K-points:**
+
+From the second tab, K-points file can be created in two modes: either in automatic or band-structure mode. Automatic mode is self-explanatory, while for the band-structure mode, using icon Brillouin zone for any loaded structure can be visualized, k-path be selected and corresponding co-ordinates are exported and K-points file is created. In the current version of CINEMAS, only high symmetry points are exported and labeling has to be done manually. 
+
+.. figure:: _static/kpts-1.png
+   :alt: kpts-1
+   :align: center
+   :scale: 80%
+
+   Input-files: Creating K-points for standard calculations.
+
+.. figure:: _static/kpts-2.png
+   :alt: kpts-2
+   :align: center
+   :scale: 80%
+
+   Input-files: Create K-points for band-structure calculations.
+
+.. figure:: _static/kpts-3.png
+   :alt: kpts-3
+   :align: center
+   :scale: 80%
+
+   Input-files: For band-structure, visualize BZ and select k-path and export corresponding co-ordinates. In current version labeling of high-symmetry points has be done manually.
+
+3) **Potentials:**
+
+From the third tab, type of potential(LDA/GGA-PW91/GGA-PBE) can be chosen as well as available option of potentials with different valence. Above holds true if potential files have been :ref:`configured<Potential-files configuration>` already. 
+
+.. figure:: _static/potential-1.png
+   :alt: potential-1
+   :align: center
+   :scale: 80%
+
+   Input-files: Select potentials for respective atomic species.
+
+4) **Instructions:**
+
+From the fourth tab, instructions-file(INCAR for VASP) can be prepared, essentially telling DFT-engine(VASP) what to do. CINEMAS can prepare instruction-file in graphical, as well as text mode. All possible code-specific tags have been divided into several categories to help a user lesser experienced with the DFT-code. These categories are further distributed over different user levels such as basic/intermediate/expert. Alternatively expert users can directly type the file in text mode. Additionally any other instruction file can be loaded and modified, or saved for repetitive use in future.
+
+.. figure:: _static/instruct-1.png
+   :alt: instruct-1
+   :align: center
+   :scale: 80%
+
+   Input-files: Select categories from the left pane, as per nature of the calculation.
+
+.. figure:: _static/instruct-2.png
+   :alt: instruct-2
+   :align: center
+   :scale: 80%
+
+   Input-files: Expanded view of a category(here Relaxation).
+
+.. figure:: _static/instruct-3.png
+   :alt: instruct-3
+   :align: center
+   :scale: 80%
+
+   Input-files: Further expand any category based upon user level, by clicking advance options.
+
+.. figure:: _static/instruct-4.png
+   :alt: instruct-4
+   :align: center
+   :scale: 80%
+
+   Input-files: Hovering the cursor on a particular option, shows relevant tag for DFT-code(VASP here).
+
+.. figure:: _static/instruct-5.png
+   :alt: instruct-5
+   :align: center
+   :scale: 80%
+
+   Input-files: A sample view of few options selected.
+
+.. figure:: _static/instruct-6.png
+   :alt: instruct-6
+   :align: center
+   :scale: 80%
+
+   Input-files: Text mode equivalent of previous window, after selecting options.
+
+.. |indicator| image:: _static/input-indicator.png

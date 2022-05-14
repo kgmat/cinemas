@@ -1,0 +1,623 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CINEMAS-CASCADE &mdash; CINEMAS  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/my_theme.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How to import input-files/data from Materials-project database" href="matprojimport.html" />
+    <link rel="prev" title="Components of CINEMAS application" href="components.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/cinemas_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">CINEMAS-components:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="components.html">Components of CINEMAS application</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">CASCADE</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#workflows">Workflows</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#color-coding-of-workflows">Color coding of workflows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#copy-paste-feature-of-workflows">Copy/Paste feature of workflows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mark-as-important-feature">‘Mark-as-important’ feature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-calculations">Import Calculations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#utility">Utility</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#automatic-modules">Automatic Modules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#band-structure-module">Band-structure Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dos-module">DOS Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#phonopy">Phonopy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#formation-energy-module">Formation Energy Module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#connections">Connections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#queue">Queue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#python-editor">Python Editor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cinemasview.html">CINEMAS-view</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#structure-visualizer">Structure Visualizer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#structure-manager">Structure Manager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#fermi-surface-visualizer">Fermi Surface Visualizer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#robocrystallographer">Robocrystallographer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#visualize-magnetic-configuration">Visualize magnetic configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="magview.html">How to visualize magnetic configuration of atoms from an initial or a computed structure(<em>Mag-View</em>)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#visualize-forces-on-a-computes-structure">Visualize forces on a computes structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="forceview.html">How to visualize forces on atoms from a computed structure(<em>Force-View</em>)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cinemasplot.html">CINEMAS-plot</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cinemasplot.html#cinemas-plot-tables">CINEMAS-plot tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasplot.html#cinemas-plot-graphs">CINEMAS-plot graphs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cinemasdraw.html">CINEMAS-draw</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cinemasdraw.html#more-about-cinemas-draw">More about CINEMAS-draw</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Download CINEMAS:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="download.html">How to download CINEMAS</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How to Install:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installing CINEMAS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#installer">Installer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#potential-files-configuration">Potential-files configuration</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">License:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="license.html">CINEMAS License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html#third-party-licenses">Third Party Licenses</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="license.html#qwt-plotting-libraries">Qwt plotting libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#qt-license-lgpl">Qt License(LGPL)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#libssh2">Libssh2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#pymatgen">Pymatgen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#robocrystallographer-license">Robocrystallographer_License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#miniconda">Miniconda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#spglib">SpgLib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#xpdf">Xpdf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#phonopy-license">Phonopy License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#seekpath">Seekpath</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">CINEMAS Help:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="help.html">User forum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html#start-with-cinemas">Start with CINEMAS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="start.html">How to start with CINEMAS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="start.html#create-open-a-new-cinemas-project">Create/open a new CINEMAS project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="start.html#load-dft-engine-input-output-file-s">Load DFT-engine input/output file(s)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="start.html#import-existing-calculation-s">Import existing calculation(s)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="start.html#import-vasp-input-files-from-materials-project-to-cinemas">Import VASP input files from materials-project to CINEMAS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="input-prep.html">How to create input files?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup-connections.html">How to setup connections between the local machine and a remote server?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue.html">How to manage Job status(Queue)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matprojimport.html">How to import input-files/data from Materials-project database</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matprojimport.html#materials-project-interface">Materials-project interface</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="fermisurface.html">How to visualize Fermi-surface in CINEMAS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="fermisurface.html#examples-of-nonmagnetic-al">Examples of Nonmagnetic Al</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="phonopysteps.html">How to use Phonopy automatic module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="phonopysteps.html#phonopy-from-scratch-using-a-structure-file">Phonopy from scratch using a structure file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="elastic_module.html">How to use Elastic automatic module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="elastic_module.html#calculate-elastic-constants-from-scratch-using-a-structure-file">Calculate Elastic constants from scratch using a structure file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="elastic_module.html#calculate-elastic-constants-from-a-bank-template">Calculate Elastic constants from a bank template</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dielectric_module.html">How to use Dielectric automatic module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dielectric_module.html#calculate-dielectric-constants-from-scratch-using-a-structure-file">Calculate Dielectric constants from scratch using a structure file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dielectric_module.html#calculate-dielectric-constants-from-a-bank-template">Calculate Dielectric constants from a bank template</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="surface_module.html">How to use Surface automatic module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="surface_module.html#model-a-surface-slab-from-scratch-using-a-structure-file">Model a surface slab from scratch using a structure file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ammcr_mobility_module.html">How to use AMMCR automatic module to calculate charge mobility</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ammcr_mobility_module.html#calculate-charge-mobility-from-scratch-using-a-structure-file">Calculate charge mobility from scratch using a structure file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="featurizerGUI.html">How to use Featurizer in CINEMAS: an interface to Matminer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="featurizerGUI.html#featurize-from-composition">Featurize from composition</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modeltrainingGUI.html">How to train models using CINEMAS-GUI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modeltrainingGUI.html#analyse-database-for-model-training">Analyse database for model training</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modeltrainingGUI.html#train-a-regression-model-in-cinemas">Train a regression model in CINEMAS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modeltrainingGUI.html#train-a-classification-model-in-cinemas">Train a classification model in CINEMAS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bandstructuresteps.html">Guide to CINEMAS-bandstructure module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bandstructuresteps.html#bandstructure-from-scratch-using-a-structure-file">Bandstructure from scratch using a structure file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bandstructuresteps.html#bandstructure-from-a-blank-template">Bandstructure from a blank template</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="kptsConvergenceModule.html">How to use Kpoints-convergence automatic module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="forceview.html">How to visualize forces on atoms from a computed structure(<em>Force-View</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="magview.html">How to visualize magnetic configuration of atoms from an initial or a computed structure(<em>Mag-View</em>)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="help.html#video-tutorials">Video Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vid.html">Dielectric constants: Automatic Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#elastic-constants-automatic-module">Elastic constants: Automatic Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#bandstructure-automatic-module">Bandstructure: Automatic module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#visualize-magnetic-configurations">Visualize magnetic configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#visualize-forces">Visualize forces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#query-materials-project-database-and-import-vasp-input-files-in-cinemas">Query Materials-project database, and import VASP input files in CINEMAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#visualize-3d-fermi-surface-in-cinemas">Visualize 3D Fermi-surface in CINEMAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#describe-a-structure-in-cinemas-using-robocrystallographer">Describe a Structure in CINEMAS, using Robocrystallographer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#import-external-calculations-to-cinemas-and-post-process">Import external calculations to CINEMAS and post-process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#configuring-potential-file-in-newer-versions-2020">Configuring Potential file in newer versions(2020)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#cinemas-integrated-gui">CINEMAS integrated GUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#setting-up-potential-files">Setting up potential files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#create-workflows-and-input-files">Create workflows and input files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#connection-transfer-files-and-execute">Connection, transfer files and execute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#structure-manager-build-surface-cell">Structure manager: build surface cell</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">The CINEMAS team:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Developers’ group members</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html#advisory-board-members">Advisory board members</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html#credits">Credits</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CINEMAS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="components.html">Components of CINEMAS application</a> &raquo;</li>
+        
+      <li>CINEMAS-CASCADE</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cascade">
+<span id="cascade-components"></span><h1>CASCADE<a class="headerlink" href="#cascade" title="Permalink to this headline">¶</a></h1>
+<p><em>CASCADE</em> is the central component of CINEMAS, connecting all the other components.</p>
+<div class="section" id="workflows">
+<h2>Workflows<a class="headerlink" href="#workflows" title="Permalink to this headline">¶</a></h2>
+<p>Each of the calculations is represented as a workflow
+and several functions can be envoked through this workflow. Multiple child workflows can be created for dependent calculations. A CINEMAS-workflow
+is shown below:</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/jobicon.png"><img alt="jobicon" src="_images/jobicon.png" style="width: 605.4px; height: 367.2px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Description of a workflow-icon.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>The icon <img alt="hide" src="_images/hide-job.png" /> hides a workflow, which a user think is not important to be shown on the CASCADE. When cursor is hovered over the hidden workflow, its name is displayed without showing its expanded view and thus occupying lesser space on CASCADE. See <a class="reference internal" href="#wfl-expanded"><span class="std std-numref">Fig. 3</span></a> and <a class="reference internal" href="#wfl-collapsed"><span class="std std-numref">Fig. 4</span></a>.</p></li>
+<li><p>The icon <img alt="indicator" src="_images/input-indicator.png" /> invokes <a class="reference internal" href="input-prep.html#how-to-create-input-files"><span class="std std-ref">preparation of input files</span></a> and shows which input file is present within a workflow. Triangles within this icon turn green in clockwise direction if files are present in the order of structure, k-points, potential and input-instructions(<strong>POSCAR–&gt; KPOINTS –&gt; POTCAR –&gt; INCAR</strong> for the case of VASP).</p></li>
+<li><p>The icon <img alt="star" src="_images/star-job.png" /> marks a particular workflow as <em>important</em> and that workflow shows up in the CASCADE hierarchy or anywhere else in CINEMAS where workflows are listed. Within several <em>starred</em> workflows, they will be arranged in alphabetical order.</p></li>
+<li><p>The icon <img alt="visual" src="_images/visual.png" /> will redirect to the CINEMAS-view. By default input-structure will be shown, but once within visualizer a number of files(relaxed-structure, charge-density, partial charge density or files in any other supported formats.) can be chosen to be visualized if present in a workflow.</p></li>
+<li><p>The icon <img alt="plot" src="_images/plot.png" /> will redirect to the <em>Analysis</em> workspace. A number of filters can be applied: <em>e.g.</em> for band-structure/DOS or multiple jobs can be compared for a single value, and corresponding selectively filtered data can be sent to CINEMAS-plot.</p></li>
+<li><p>The icon <img alt="snapshot" src="_images/snapshot.png" /> displays quick summary of initial and final(if completed) parameters corresponding to a workflow. If calculation is completed, energy convergence for each iteration is also displayed for a ready reference.</p></li>
+<li><p>The icon <img alt="submit" src="_images/submit.png" /> shows a list of connected remote server(s). Workflow can be executed on a choice of remote-server. This icon will change to display the current status of a workflow: <em>e.g.</em> whether its waiting in the queue on the remote server, running, finished, stopped with error or killed by user and <em>etc</em>. If a calculation is over, same icon will serve as a prompt to download selected or all the output files, or start-over a calculation.</p></li>
+<li><p>The icon <img alt="child" src="_images/child-job.png" /> allows to create child workflow(dependent calculation), where forward workflow take output of parent workflow as its input.</p></li>
+<li><p>The icon <img alt="color" src="_images/color-code.png" /> can be used to provide color codes to workflows. Categories of calculations can be easily identified with a chosen color: <em>e.g.</em> green for relaxation or red for DOS.</p></li>
+<li><p>The icon <img alt="name" src="_images/job-name.png" /> allows to name a workflow. By default there will be name Job_x, where x is the number of workflow created over CASCADE.</p></li>
+</ul>
+<div class="figure align-center" id="wfl-expanded">
+<a class="reference internal image-reference" href="_images/workflow_expanded.png"><img alt="_images/workflow_expanded.png" src="_images/workflow_expanded.png" style="width: 90%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Hide/show worfklows: Full view of worfklows’ hierarchy.</span><a class="headerlink" href="#wfl-expanded" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="wfl-collapsed">
+<a class="reference internal image-reference" href="_images/workflow_collapsed.png"><img alt="_images/workflow_collapsed.png" src="_images/workflow_collapsed.png" style="width: 90%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Hide/show worfklows: collapsed view of worfklows’ hierarchy. Hovering the cursor over a hidden workflow displays the name.</span><a class="headerlink" href="#wfl-collapsed" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="color-coding-of-workflows">
+<h3>Color coding of workflows<a class="headerlink" href="#color-coding-of-workflows" title="Permalink to this headline">¶</a></h3>
+<p>Users can assign their own color-codes to different types of calculations. This will serve as an easy guide to eyes when CASCADE window is crowded with a lot of workflows.</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/color-code-full.png"><img alt="colorfull" src="_images/color-code-full.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Assigning colors to workflows, an easy guide to eyes(click image to enlarge).</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="copy-paste-feature-of-workflows">
+<h3>Copy/Paste feature of workflows<a class="headerlink" href="#copy-paste-feature-of-workflows" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="mark-as-important-feature">
+<h3>‘Mark-as-important’ feature<a class="headerlink" href="#mark-as-important-feature" title="Permalink to this headline">¶</a></h3>
+<p>By clicking icon <img alt="star" src="_images/star-job.png" />, any workflow can be marked as <em>important</em>. This implies that <em>starred</em> workflow will appear up in the hierarchy on CASCADE. <em>Starred</em> workflows under same level, will be arranged further in alphabetical order. Additionally, same <em>starred</em> arrangement will apply
+for any listing of workflows throughout CINEMAS application.</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/markimp1.png"><img alt="submit" src="_images/markimp1.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Workflows before being <em>starred</em>.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id5">
+<a class="reference internal image-reference" href="_images/markimp2.png"><img alt="submit" src="_images/markimp2.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Workflows after being <em>starred</em>.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="import-calculations">
+<h3>Import Calculations<a class="headerlink" href="#import-calculations" title="Permalink to this headline">¶</a></h3>
+<p>CINEMAS can import calculations in the following two ways.</p>
+<div class="section" id="from-materials-project">
+<h4>From Materials-project<a class="headerlink" href="#from-materials-project" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>From materials database like <a class="reference external" href="https://materialsproject.org/">Materials Project</a>.
+VASP input-files or structure file can be imported from Materials-Project</p></li>
+</ul>
+<div class="figure align-center" id="id6">
+<a class="reference internal image-reference" href="_images/import-matproj.png"><img alt="submit" src="_images/import-matproj.png" style="width: 312.9px; height: 105.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Import calculations from external databases.</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id7">
+<a class="reference internal image-reference" href="_images/matproj1.png"><img alt="submit" src="_images/matproj1.png" style="width: 570.0px; height: 329.4px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Perform a search for a chemical system.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id8">
+<a class="reference internal image-reference" href="_images/matproj2.png"><img alt="submit" src="_images/matproj2.png" style="width: 571.1999999999999px; height: 330.59999999999997px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Interface prompting for Materials-project API key(to be generated from their website).</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id9">
+<a class="reference internal image-reference" href="_images/matproj3.png"><img alt="submit" src="_images/matproj3.png" style="width: 568.1999999999999px; height: 330.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">Returned resulted from a search, and available options within CINEMAS.</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="matprojimport.html">How to import input-files/data from Materials-project database</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="matprojimport.html#materials-project-interface">Materials-project interface</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="from-disk">
+<h4>From disk<a class="headerlink" href="#from-disk" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>A folder and sub-folders containing valid calculations’ files.</p></li>
+</ul>
+<div class="figure align-center" id="id10">
+<a class="reference internal image-reference" href="_images/import-directory.png"><img alt="submit" src="_images/import-directory.png" style="width: 363.20000000000005px; height: 121.60000000000001px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 25 </span><span class="caption-text">Import calculations from disk.</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="utility">
+<h3>Utility<a class="headerlink" href="#utility" title="Permalink to this headline">¶</a></h3>
+<p>CINEMAS has <em>Utility</em> menu which will contain some frequently required tools for DFT or other computations. Current version has a basic implementation of periodic table. More tools will be added in upcoming versions.</p>
+<div class="figure align-center" id="id11">
+<a class="reference internal image-reference" href="_images/utilperiodic1.png"><img alt="util1" src="_images/utilperiodic1.png" style="width: 40%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 26 </span><span class="caption-text">Utility menu on CASCADE panel.</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id12">
+<a class="reference internal image-reference" href="_images/utilperiodic2.png"><img alt="util2t" src="_images/utilperiodic2.png" style="width: 50%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 27 </span><span class="caption-text">Periodic table(basic information) under utility.</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="automatic-modules">
+<h2>Automatic Modules<a class="headerlink" href="#automatic-modules" title="Permalink to this headline">¶</a></h2>
+<p>CINEMAS automatic modules are designed to enable non-expert users to set-up and perform DFT calculations with no or minimal user intervention.
+While expert users can fine-tune CINEMAS-default settings and save them over a template to be used as required. For these modules both the preparation of
+input files as well as the post-processing is performed automatically, but still providing a handle to the user to customize as per the needs.
+These modules include several categories, automation to standard calculations like band-structure, or density of sates, abstracting
+command-line based codes developed in-house by our group, and providing a graphical user interface to external third-party tools(e.g. Phonopy).</p>
+<p>In the current version of CINEMAS application, available automatic modules are: Density of states(DOS) module, Band-structure module, Formation-energy
+module, and Phonopy module. And more of such modules are under development.</p>
+<div class="section" id="band-structure-module">
+<h3>Band-structure Module<a class="headerlink" href="#band-structure-module" title="Permalink to this headline">¶</a></h3>
+<p>Band-structure calculations can also be performed using CINEMAS automatic module, which has the workflows of the same abstracted
+to CINEMAS GUI.</p>
+<p>Band-structure module of CINEMAS can be used in two ways:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="bandstructuresteps.html">Guide to CINEMAS-bandstructure module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bandstructuresteps.html#bandstructure-from-scratch-using-a-structure-file">Bandstructure from scratch using a structure file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bandstructuresteps.html#bandstructure-from-a-blank-template">Bandstructure from a blank template</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="dos-module">
+<h3>DOS Module<a class="headerlink" href="#dos-module" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>CINEMAS DOS module is another module, to create workflows to calculate density of states for a given structure.</p></li>
+<li><p>This is performed in the same way as CINEMAS bandstructure module.</p></li>
+<li><p>Steps can be followed similar to the <a class="reference internal" href="bandstructuresteps.html#guide-to-cinemas-bandstructure-module"><span class="std std-ref">bandstructure module</span></a>.</p></li>
+<li><p>However, the <strong>default</strong> and <strong>user</strong> settings are tailored for DOS calculations specifically.</p></li>
+</ul>
+</div>
+<div class="section" id="phonopy">
+<h3>Phonopy<a class="headerlink" href="#phonopy" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://phonopy.github.io/phonopy/index.html">Phonopy</a> is a widely used Python base package for phonon calculations at harmonic and quasi-harmonic levels.</p>
+<p>CINEMAS has an integrated automatic module, having execution of Phonopy abstracted to a GUI connected to CASCADE.</p>
+<p>Phonopy module of CINEMAS can be used in two ways:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><span class="xref std std-ref">Start from the scratch</span> by loading a structure file, and all the remaining files will be prepared by CINEMAS automatically with no or minimal user intervention.</p></li>
+<li><p>Create an empty template, paste force-calculation data into workflows. And Phonopy post-processing can be performed automatically with basic but sufficient settings, which can be fine tuned for advanced analysis.</p></li>
+</ul>
+</div></blockquote>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="phonopysteps.html">How to use Phonopy automatic module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="phonopysteps.html#phonopy-from-scratch-using-a-structure-file">Phonopy from scratch using a structure file</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="formation-energy-module">
+<h3>Formation Energy Module<a class="headerlink" href="#formation-energy-module" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="connections">
+<h2>Connections<a class="headerlink" href="#connections" title="Permalink to this headline">¶</a></h2>
+<p>CINEMAS can execute calculations on local machine as well as on a number of remote servers together.</p>
+<p>In order to run calculations on local machine itself, user has to just point CINEMAS to the binary location.</p>
+<p>CINEMAS can establish connections and manage calculations on remote servers with different types of job schedulers. Current version of CINEMAS
+supports following job schedulers:</p>
+<ul class="simple">
+<li><p>PBS</p></li>
+<li><p>Moab</p></li>
+<li><p>OTP-type</p></li>
+</ul>
+<p><strong>Connections to remote server through multiple gateway servers</strong></p>
+<p>A few research groups have arrangement of connection to remote server through gateway(s). From the command-line, usually this requires
+SSH <em>n</em> times and the same while uploading/downloading data. CINEMAS eases out this type of connections by creating a direct tunnel for connection
+as well as for file-transfer.</p>
+<div class="figure align-center" id="id13">
+<a class="reference internal image-reference" href="_images/gateway.png"><img alt="gateway" src="_images/gateway.png" style="width: 686.8000000000001px; height: 275.2px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 49 </span><span class="caption-text">CINEMAS: Connections and file-transfer between local machine and remote server with multiple hops through several gateways.</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+</div>
+<p>Find more about remote-connections in CINEMAS <a class="reference internal" href="setup-connections.html#how-to-setup-connections-between-the-local-machine-and-a-remote-server"><span class="std std-ref">here</span></a>.</p>
+</div>
+<div class="section" id="queue">
+<h2>Queue<a class="headerlink" href="#queue" title="Permalink to this headline">¶</a></h2>
+<p>Once, valid connection(s) are established between local machine and remote compute server, a workflow can be submitted to a choice of server as shown for ‘Job4’ in the figure below. Status of a calculation can be seen right on the workflow itself e.g. ‘Job1’ is completed(green ticked-icon), ‘Job2’ is running(light blue wheel-icon) and ‘Job2’ is waiting in the queue on remote server(darker blue list-icon).</p>
+<p>The same job-status can be seen from the ‘Queue’ workspace on the top-right corner of CASCADE screen. Right from the local machine status can be observed, refreshed or a job running on the remote server can be killed.</p>
+<p>Once a calculation is completed(Job1 here), by clicking ‘snapshot’ icon(camera) a quick view of iterations is available, as shown in the lower half of the figure below. Selected or all the files can be downloaded from the remote server to the local machine.</p>
+<div class="figure align-center" id="id14">
+<a class="reference internal image-reference" href="_images/job-submit-1.png"><img alt="submit" src="_images/job-submit-1.png" style="width: 564.1999999999999px; height: 536.1999999999999px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 50 </span><span class="caption-text">Snapshots of job submission and job status in ‘Queue’.</span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="python-editor">
+<h2>Python Editor<a class="headerlink" href="#python-editor" title="Permalink to this headline">¶</a></h2>
+<p>CINEMAS is bundled with <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> package(under its <a class="reference internal" href="miniconda.html#miniconda-license"><span class="std std-ref">BSD license</span></a>). CASCADE has an integrated Python editor tool to write, and execute programs
+over existing workflows from CASCADE. Python editor serves as the bridge to connect CASCADE workflows and popular external materials science
+tools such as Pymatgen, Matminer, ASE, Phonopy or similar.</p>
+<p>Some of the main features of the Python editor are:</p>
+<ul class="simple">
+<li><p>Syntax highlighting.</p></li>
+<li><p>Two mode: Run / Run-load.</p></li>
+<li><p>In Run-load mode, some of generated files can be viewed within CINEMAS itself, immediately after the Python program exits successfully.</p></li>
+<li><p>CSV files are opened as the tables in CINEMAS-plot, while jpg/png file are opened in CINEMAS-draw, while other file formats are opened in
+native applications.</p></li>
+<li><p>Multiple Python instances can be executed from multiple tabs within the editor.</p></li>
+<li><p>Output console(hide/show) for each tab below the editor pan. This is not a shell prompt though, it just shows the output of Python execution.</p></li>
+<li><p>Continuous output(print statements) are also updated therein.</p></li>
+</ul>
+<div class="figure align-center" id="id15">
+<a class="reference internal image-reference" href="_images/pyed1.png"><img alt="py-editor1" src="_images/pyed1.png" style="width: 631.5px; height: 492.5px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 51 </span><span class="caption-text">Snapshot of CINEMAS-py, an in-built Python editor.</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id16">
+<a class="reference internal image-reference" href="_images/pyed2.png"><img alt="py-editor2" src="_images/pyed2.png" style="width: 774.0px; height: 405.5px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 52 </span><span class="caption-text">Snapshot of CINEMAS-py, an in-built Python editor.</span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id17">
+<a class="reference internal image-reference" href="_images/pyed3.png"><img alt="py-editor3" src="_images/pyed3.png" style="width: 617.5px; height: 490.5px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 53 </span><span class="caption-text">Snapshot of CINEMAS-py, an in-built Python editor.</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
+</div>
+<p>Find more about CINEMAS-Python editor <a class="reference internal" href="pyeditor.html#cinemas-python-editor"><span class="std std-ref">here</span></a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="matprojimport.html" class="btn btn-neutral float-right" title="How to import input-files/data from Materials-project database" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="components.html" class="btn btn-neutral float-left" title="Components of CINEMAS application" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019-2022, Indo-Korea Science and Technology Center, Bengaluru INDIA | Written by Kapil Gupta
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-177210156-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>

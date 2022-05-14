@@ -1,0 +1,15 @@
+.. title:: Auto band Examples
+.. _autobandexamples:
+
+
+Band Examples
+===================
+
+Bulk Silicon
+---------------
+
+.. raw:: html
+
+    <div style="margin-top:10px;" align="center">
+      <iframe width="960" height="615" src="_static/plotly-figs/band_test.html" frameborder="0" allowfullscreen></iframe>
+    </div>

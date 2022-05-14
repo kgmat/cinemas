@@ -1,0 +1,507 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CINEMAS-Draw &mdash; CINEMAS  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/my_theme.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How to download CINEMAS" href="download.html" />
+    <link rel="prev" title="CINEMAS-plot" href="cinemasplot.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/cinemas_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">CINEMAS-components:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="components.html">Components of CINEMAS application</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="cascade.html">CASCADE</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cascade.html#workflows">Workflows</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#color-coding-of-workflows">Color coding of workflows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#copy-paste-feature-of-workflows">Copy/Paste feature of workflows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#mark-as-important-feature">‘Mark-as-important’ feature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#import-calculations">Import Calculations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#utility">Utility</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cascade.html#automatic-modules">Automatic Modules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#band-structure-module">Band-structure Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#dos-module">DOS Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#phonopy">Phonopy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#formation-energy-module">Formation Energy Module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cascade.html#connections">Connections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cascade.html#queue">Queue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cascade.html#python-editor">Python Editor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cinemasview.html">CINEMAS-view</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#structure-visualizer">Structure Visualizer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#structure-manager">Structure Manager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#fermi-surface-visualizer">Fermi Surface Visualizer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#robocrystallographer">Robocrystallographer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#visualize-magnetic-configuration">Visualize magnetic configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="magview.html">How to visualize magnetic configuration of atoms from an initial or a computed structure(<em>Mag-View</em>)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#visualize-forces-on-a-computes-structure">Visualize forces on a computes structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="forceview.html">How to visualize forces on atoms from a computed structure(<em>Force-View</em>)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cinemasplot.html">CINEMAS-plot</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cinemasplot.html#cinemas-plot-tables">CINEMAS-plot tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasplot.html#cinemas-plot-graphs">CINEMAS-plot graphs</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">CINEMAS-draw</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#more-about-cinemas-draw">More about CINEMAS-draw</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Download CINEMAS:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="download.html">How to download CINEMAS</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How to Install:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installing CINEMAS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#installer">Installer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#potential-files-configuration">Potential-files configuration</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">License:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="license.html">CINEMAS License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html#third-party-licenses">Third Party Licenses</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="license.html#qwt-plotting-libraries">Qwt plotting libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#qt-license-lgpl">Qt License(LGPL)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#libssh2">Libssh2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#pymatgen">Pymatgen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#robocrystallographer-license">Robocrystallographer_License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#miniconda">Miniconda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#spglib">SpgLib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#xpdf">Xpdf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#phonopy-license">Phonopy License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#seekpath">Seekpath</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">CINEMAS Help:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="help.html">User forum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html#start-with-cinemas">Start with CINEMAS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="start.html">How to start with CINEMAS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="start.html#create-open-a-new-cinemas-project">Create/open a new CINEMAS project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="start.html#load-dft-engine-input-output-file-s">Load DFT-engine input/output file(s)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="start.html#import-existing-calculation-s">Import existing calculation(s)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="start.html#import-vasp-input-files-from-materials-project-to-cinemas">Import VASP input files from materials-project to CINEMAS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="input-prep.html">How to create input files?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup-connections.html">How to setup connections between the local machine and a remote server?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue.html">How to manage Job status(Queue)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matprojimport.html">How to import input-files/data from Materials-project database</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matprojimport.html#materials-project-interface">Materials-project interface</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="fermisurface.html">How to visualize Fermi-surface in CINEMAS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="fermisurface.html#examples-of-nonmagnetic-al">Examples of Nonmagnetic Al</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="phonopysteps.html">How to use Phonopy automatic module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="phonopysteps.html#phonopy-from-scratch-using-a-structure-file">Phonopy from scratch using a structure file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="elastic_module.html">How to use Elastic automatic module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="elastic_module.html#calculate-elastic-constants-from-scratch-using-a-structure-file">Calculate Elastic constants from scratch using a structure file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="elastic_module.html#calculate-elastic-constants-from-a-bank-template">Calculate Elastic constants from a bank template</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dielectric_module.html">How to use Dielectric automatic module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dielectric_module.html#calculate-dielectric-constants-from-scratch-using-a-structure-file">Calculate Dielectric constants from scratch using a structure file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dielectric_module.html#calculate-dielectric-constants-from-a-bank-template">Calculate Dielectric constants from a bank template</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="surface_module.html">How to use Surface automatic module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="surface_module.html#model-a-surface-slab-from-scratch-using-a-structure-file">Model a surface slab from scratch using a structure file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ammcr_mobility_module.html">How to use AMMCR automatic module to calculate charge mobility</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ammcr_mobility_module.html#calculate-charge-mobility-from-scratch-using-a-structure-file">Calculate charge mobility from scratch using a structure file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="featurizerGUI.html">How to use Featurizer in CINEMAS: an interface to Matminer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="featurizerGUI.html#featurize-from-composition">Featurize from composition</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modeltrainingGUI.html">How to train models using CINEMAS-GUI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modeltrainingGUI.html#analyse-database-for-model-training">Analyse database for model training</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modeltrainingGUI.html#train-a-regression-model-in-cinemas">Train a regression model in CINEMAS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modeltrainingGUI.html#train-a-classification-model-in-cinemas">Train a classification model in CINEMAS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bandstructuresteps.html">Guide to CINEMAS-bandstructure module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bandstructuresteps.html#bandstructure-from-scratch-using-a-structure-file">Bandstructure from scratch using a structure file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bandstructuresteps.html#bandstructure-from-a-blank-template">Bandstructure from a blank template</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="kptsConvergenceModule.html">How to use Kpoints-convergence automatic module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="forceview.html">How to visualize forces on atoms from a computed structure(<em>Force-View</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="magview.html">How to visualize magnetic configuration of atoms from an initial or a computed structure(<em>Mag-View</em>)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="help.html#video-tutorials">Video Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vid.html">Dielectric constants: Automatic Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#elastic-constants-automatic-module">Elastic constants: Automatic Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#bandstructure-automatic-module">Bandstructure: Automatic module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#visualize-magnetic-configurations">Visualize magnetic configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#visualize-forces">Visualize forces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#query-materials-project-database-and-import-vasp-input-files-in-cinemas">Query Materials-project database, and import VASP input files in CINEMAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#visualize-3d-fermi-surface-in-cinemas">Visualize 3D Fermi-surface in CINEMAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#describe-a-structure-in-cinemas-using-robocrystallographer">Describe a Structure in CINEMAS, using Robocrystallographer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#import-external-calculations-to-cinemas-and-post-process">Import external calculations to CINEMAS and post-process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#configuring-potential-file-in-newer-versions-2020">Configuring Potential file in newer versions(2020)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#cinemas-integrated-gui">CINEMAS integrated GUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#setting-up-potential-files">Setting up potential files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#create-workflows-and-input-files">Create workflows and input files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#connection-transfer-files-and-execute">Connection, transfer files and execute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#structure-manager-build-surface-cell">Structure manager: build surface cell</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">The CINEMAS team:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Developers’ group members</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html#advisory-board-members">Advisory board members</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html#credits">Credits</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CINEMAS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="components.html">Components of CINEMAS application</a> &raquo;</li>
+        
+      <li>CINEMAS-Draw</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cinemas-draw">
+<span id="cindraw-components"></span><h1>CINEMAS-draw<a class="headerlink" href="#cinemas-draw" title="Permalink to this headline">¶</a></h1>
+<p>CINEMAS-draw is an integrated tool of CINEMAS, where users can prepare figures for publication or otherwise. CINEMAS-draw can be used as
+a standalone application to prepare figures from scratch, or the graphics can be exported from CINEMAS-view and CINEMAS-plot directly and
+further drawings can me made.</p>
+<p>CINEMAS-draw can export graphics in jpg/png formats with up-to 20X scaling, as well as vector formats like ps/eps/pdf.</p>
+<p>CINEMAS-draw is not just a basic ‘paint’ application, some features are:</p>
+<ul class="simple">
+<li><p>Special character and mathematical symbols available through GUI.</p></li>
+<li><p>Mathematical equation(characters based) can be inserted through GUI.</p></li>
+<li><p>Mathematical equation(Latex based) can be inserted. A separate Latex installation is required.</p></li>
+<li><p>Drawings are object based. Once drawn, elements can be moved, dragged or repositioned(powerpoint style).</p></li>
+<li><p>Drawing elements are depth enabled. For multiple superposed elements, can be brought to front or sent to back.</p></li>
+<li><p>Multiple drawings can be made in tab arrangement, and can be saved on consolidated CINEMAS project.</p></li>
+</ul>
+<p>One can navigate to CINEMAS-draw using ‘Drawer’ button as shown below:</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/nav_2_drawer.png"><img alt="nav_2_drawer" src="_images/nav_2_drawer.png" style="width: 679.1999999999999px; height: 439.2px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 86 </span><span class="caption-text">Navigate to CINEMAS-draw.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Users can start afresh from CINEMAS-draw or use <img alt="2draw" src="_images/export_to_drawer_icon.png" /> button, from CINEMAS-view(including its Fermi-surface utility) or CINEMAS-plot toolbar
+to export graphics from there and further draw on them or use them.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/draw_from_view.png"><img alt="draw_from_view" src="_images/draw_from_view.png" style="width: 684.6px; height: 184.79999999999998px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 87 </span><span class="caption-text">Export graphics from CINEMAS-view.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/draw_from_plot.png"><img alt="draw_from_plot" src="_images/draw_from_plot.png" style="width: 719.4px; height: 171.6px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 88 </span><span class="caption-text">Export graphics from CINEMAS-plot.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>Figures can be prepared by mixing several graphics from CINEMAS-view or CINEMAS-plot. One such example is shown below:</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/drawer_sample.png"><img alt="drawer_sample" src="_images/drawer_sample.png" style="width: 945.5999999999999px; height: 455.4px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 89 </span><span class="caption-text">Exporting and mixing graphics from CINEMAS-plot and CINEMAS-view, to prepare a figure.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id5">
+<a class="reference internal image-reference" href="_images/drawsample1.png"><img alt="drawsample1" src="_images/drawsample1.png" style="width: 837.6px; height: 530.4px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 90 </span><span class="caption-text">A sample drawing created and exported from CINEMAS-draw. Structure shown is directly exported from CINEMAS-view.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="more-about-cinemas-draw">
+<h2>More about CINEMAS-draw<a class="headerlink" href="#more-about-cinemas-draw" title="Permalink to this headline">¶</a></h2>
+<p>Drawings can be made in CINEMAS-draw by:</p>
+<ul class="simple">
+<li><p>Starting from a blank page using the icon <img alt="new_draw" src="_images/new-drawing.png" /> from CINEMAS-draw toolbar.</p></li>
+</ul>
+<p>OR</p>
+<ul class="simple">
+<li><p>Exporting graphics from CINEMAS-view/Fermi-surface/CINEMAS-plot by clicking the icon <img alt="export_2_draw" src="_images/export_to_drawer_icon.png" /> from their respective toolbar.</p></li>
+</ul>
+<p>The following is CINEMAS-draw parent window, and multiple drawings can be created in multiple <em>tabs</em>, and all of them
+can be saved in main CINEMAS project file.</p>
+<div class="figure align-center" id="draw-window">
+<a class="reference internal image-reference" href="_images/nav_2_drawer.png"><img alt="_images/nav_2_drawer.png" src="_images/nav_2_drawer.png" style="width: 905.6px; height: 585.6px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 91 </span><span class="caption-text">Snapshot of CINEMAS-draw window.</span><a class="headerlink" href="#draw-window" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>From the toolbar:</strong></p>
+<ul class="simple">
+<li><p>Add a blank page within CINEMAS-draw by clicking  <img alt="new_draw" src="_images/new-drawing.png" />  icon.</p></li>
+<li><p>A click on this button creates a new tab with a blank canvas.</p></li>
+<li><p>Images from disk can be inserted by clicking the icon <img alt="insert_draw" src="_images/insert_image.png" />.</p></li>
+<li><p>A shape from the list can be selected and drawn on the canvas, using the icon <img alt="shapes_menu" src="_images/shapes_menu.png" /></p></li>
+<li><p><strong>Style Options</strong> provides properties console, as shown in <a class="reference internal" href="#latex1"><span class="std std-numref">Fig. 96</span></a>.</p></li>
+</ul>
+<div class="figure align-center" id="shapes-list">
+<a class="reference internal image-reference" href="_images/shapes_list.png"><img alt="_images/shapes_list.png" src="_images/shapes_list.png" style="width: 457.6px; height: 312.8px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 92 </span><span class="caption-text">CINEMAS-draw: snapshot of menu showing list of available shapes from the toolbar.</span><a class="headerlink" href="#shapes-list" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="shapes-drawn">
+<a class="reference internal image-reference" href="_images/draw_shapes_drawn.png"><img alt="_images/draw_shapes_drawn.png" src="_images/draw_shapes_drawn.png" style="width: 747.2px; height: 434.40000000000003px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 93 </span><span class="caption-text">Available shapes actually drawn on the canvas.
+Click on the image for its original size and resolution.</span><a class="headerlink" href="#shapes-drawn" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>An area on the canvas can be selected for various purposes by using the icon <img alt="rubber_select" src="_images/rubber_select.png" />.</p></li>
+<li><p>Images can be cropped to the selected area by using the icon <img alt="crop_draw" src="_images/crop_draw.png" />.</p></li>
+<li><p>Images can be saved to file with several formats like JPG/PNG/EPS/PS/PDF.</p></li>
+<li><p>Scaling up-to 30X is available for raster(JPG/PNG) formats.</p></li>
+</ul>
+<p><strong>Available properties are:</strong></p>
+<ul class="simple">
+<li><p>Line properties.</p></li>
+<li><p>Color(Fill/font) properties.</p></li>
+<li><p>Rotation properties.</p></li>
+<li><p>Shadow properties with gradient control.</p></li>
+<li><p>Polygon corner rounding.</p></li>
+<li><p>Transparent drawings(remove BG).</p></li>
+<li><p>Depth control of objects(bring to front/send to back). See <a class="reference internal" href="#depth-ctrl"><span class="std std-numref">Fig. 95</span></a>.</p></li>
+<li><p>Insert Latex snippet, See <a class="reference internal" href="#latex1"><span class="std std-numref">Fig. 96</span></a>, <a class="reference internal" href="#latex2"><span class="std std-numref">Fig. 97</span></a>.</p></li>
+</ul>
+<div class="figure align-center" id="shapes">
+<a class="reference internal image-reference" href="_images/multi_options_draw.png"><img alt="_images/multi_options_draw.png" src="_images/multi_options_draw.png" style="width: 716.4px; height: 703.1999999999999px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 94 </span><span class="caption-text">Some of the available properties and effects for objects in CINEMAS-draw.</span><a class="headerlink" href="#shapes" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="depth-ctrl">
+<a class="reference internal image-reference" href="_images/depth_draw.png"><img alt="_images/depth_draw.png" src="_images/depth_draw.png" style="width: 284.0px; height: 205.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 95 </span><span class="caption-text">Depth control for drawing objects.</span><a class="headerlink" href="#depth-ctrl" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="latex1">
+<a class="reference internal image-reference" href="_images/latex_drawer.png"><img alt="_images/latex_drawer.png" src="_images/latex_drawer.png" style="width: 298.40000000000003px; height: 346.40000000000003px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 96 </span><span class="caption-text">Latex snippet in CINEMAS-draw. A latex package has to be installed separately.</span><a class="headerlink" href="#latex1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="latex2">
+<a class="reference internal image-reference" href="_images/equation_drawer.png"><img alt="_images/equation_drawer.png" src="_images/equation_drawer.png" style="width: 963.2px; height: 408.8px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 97 </span><span class="caption-text">Writing equation in CINEMAS-draw. A latex package has to be installed separately.</span><a class="headerlink" href="#latex2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Drawings crated within CINEMAS-draw can be exported into raster(JPG/PNG) and vector(PS/EPS/PDF) formats, see <a class="reference internal" href="#exprt-drw"><span class="std std-numref">Fig. 98</span></a>.
+Raster images can be scaled up-to 30X while exporting, see <a class="reference internal" href="#scale-drw"><span class="std std-numref">Fig. 99</span></a>.</p>
+<div class="figure align-center" id="exprt-drw">
+<a class="reference internal image-reference" href="_images/save_formats_draw.png"><img alt="_images/save_formats_draw.png" src="_images/save_formats_draw.png" style="width: 523.2px; height: 390.40000000000003px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 98 </span><span class="caption-text">Writing equation in CINEMAS-draw. A latex package has to be installed separately.</span><a class="headerlink" href="#exprt-drw" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="scale-drw">
+<a class="reference internal image-reference" href="_images/save_scale_draw.png"><img alt="_images/save_scale_draw.png" src="_images/save_scale_draw.png" style="width: 199.20000000000002px; height: 96.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 99 </span><span class="caption-text">Writing equation in CINEMAS-draw. A latex package has to be installed separately.</span><a class="headerlink" href="#scale-drw" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="download.html" class="btn btn-neutral float-right" title="How to download CINEMAS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cinemasplot.html" class="btn btn-neutral float-left" title="CINEMAS-plot" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019-2022, Indo-Korea Science and Technology Center, Bengaluru INDIA | Written by Kapil Gupta
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-177210156-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>

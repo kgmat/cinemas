@@ -1,0 +1,27 @@
+.. title:: CINEMAS version history
+
+====================
+CINEMAS change logs
+====================
+
+-  **Current version is 2.0.32**
+
+	* Mark as 
+	* Formation E
+	* CINEMAS
+	* CINEMAS-pl
+
+
+-  Version 2.0.31
+
+   * Mark as important: 'Starred' Jobs on CASCADE will be proritized across lists
+   * Formation Energy Module (Updated)
+   * CINEMAS-plot: More Axes options 
+   * CINEMAS-plot: Row/Column plots available now
+
+- Version 2.0.xxx.
+
+- Version 2.0.xxx.
+
+- | Version 2.0.13 (first release version)
+  | Released during winter school at JNCASR, Bengaluru INDIA

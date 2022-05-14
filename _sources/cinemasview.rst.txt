@@ -1,0 +1,180 @@
+.. title:: CINEMAS-View
+.. _cinview-components:
+
+============
+CINEMAS-view
+============
+
+.. |hide| image:: _static/hide-job.png
+.. |indicator| image:: _static/input-indicator.png
+.. |star| image:: _static/star-job.png
+.. |visual| image:: _static/visual.png
+.. |plot| image:: _static/plot.png
+.. |snapshot| image:: _static/snapshot.png
+.. |submit| image:: _static/submit.png
+.. |child| image:: _static/child-job.png
+.. |name| image:: _static/job-name.png
+.. |color| image:: _static/color-code.png
+.. |surf| image:: _static/surf-icon.png
+
+*CINEMAS-view* is and integrated structure visualizer, which can be used not only to visualize a structure and volumetric data, but to modify it and write it to a file in several formats. Current version of CINEMAS supports loading and inter-conversion of CIF, XSF, POSCAR and .vasp (VASP) and .in(Quantum espresso) formats. CIF formats are handled by use of `Pymatgen <https://pymatgen.org/>`_ libraries.
+
+Structure Visualizer
+====================
+
+*CINEMAS-view* reads all the workflows created within CASCADE, and reads & loads all the compatible files for visualization(for VASP: POSCAR/CONTCAR/CHGCAR/ELFCAR/PARCHG). 
+
+For volumetric data, *CINEMAS-view* can make difference of two files with asymmetric grid density, visualize and save the interpolated files.  
+
+.. figure:: _static/visualizer-1.png
+   :alt: visualizer-1
+   :align: center
+   :scale: 50%
+
+   CINEMAS-view: Typical look of window. Click to enlarge the image(online only).
+
+.. figure:: _static/visualizer-2.png
+   :alt: visualizer
+   :align: center
+   :scale: 50%
+
+   CINEMAS: A look of window with *dock-able* floating type Workflow-pane, Style-option-pane and info-pane, providing maximum space for visualization. Click to enlarge the image(online only).
+
+Check out :ref:`CINEMAS-view snaps <CINEMAS-view snaps>` for several graphics generated from CINEMAS-view.
+
+Though not directly a part of CINEMAS-view, from *input-files:k-points* workspace Brillouin zone can be visualized for any given 
+structure. Desires k-path can be selected on the screen and corresponding coordinates are exported to KPOINTS(for VASP) file for 
+band-structure calculations.
+
+.. figure:: _static/bz.png
+   :alt: bz
+   :align: center
+   :scale: 70%
+
+   CINEMAS: selecting k-path for band-structure calculation.
+
+Structure Manager
+==================
+
+Structure-manager is the most important feature of CINEMAS-view. It can be envoked by |surf| icon from CINEMAS-view toolbar. It allows to manipulate the input structure with respect to various symmetry operations and write it to file. Following functions are available currently with Structure-manager.
+
+- Read the given structure and cleave the surface for desired Miller indices.
+- Choose in-plane vectors for direction as well as repetition.
+- Miller indices of in-plane vectors are updated as the arrow is moved and released.
+- Create surface cell in different geometry as 'Periodic and normal', 'Periodic bulk like(with minimum atoms)' or 'Non-periodic(to create surface slabs)'.
+- Increase/decrease number of layers in slab, either by layer-by-layer mode or by giving thickness(either no. of layers or in Angstroms).
+- Apply mirror symmetry along XY, YZ or XZ planes.
+- Add adsorbate molecules directly.
+- Translate or rotate adsorbate molecule by mouse or keyboard.
+- Restrict degree of freedom for layers or atoms for atomic relaxation(Selective Dynamics for VASP).
+- Add or substitute atoms in the cell.
+- Scalar/vector type supercell can be created. For example, :math:`2\times2\times 1` or :math:`\sqrt{2}\times\sqrt{2}\times 1` type of supercell. 
+
+
+A video tutorial is available `here <https://youtu.be/GcWaBmAIXYA>`_, on how to create a surface cell or slab from any bulk cell.
+
+.. figure:: _static/surface-gif.gif
+   :alt: structmangrgif
+   :align: center
+   :scale: 60%
+
+   Structure manager features through animated image.
+
+Fermi Surface Visualizer
+========================
+
+If a valid calculation for Fermi-surface exists, CINEMAS can automatically read the calculation workflow and display Fermi-surface for the choice of bands selected. High quality graphics can be exported for publication purpose.
+
+Below is one example of Fermi-surface for non-magnetic Al in its bulk structure.
+
+From CINEMAS-view, button 'FS' invokes 'Fermi-surface' and a dialogue box displays information regarding the calculation. CINEMAS can selectively display Fermi-surface for a single or a group of bands:
+
+.. figure:: _static/fermi1.png
+   :alt: fermisurface1
+   :align: center
+   :scale: 90%
+
+   Fermi-surface: Prompting information about parsed calculation.
+
+According to the selection, Fermi-surface is displayed for individual band(s) as well as for the combination. Fermi-surfaces for individual bands can be visualized in different schemes as in 1) reciprocal unit cell, 2) BZ or 3) repeated surface in BZ. Following figures display the Fermi-surface for band #2 and #3, as well as a merged view of both.
+
+.. figure:: _static/fermi2.png
+   :alt: fermisurface2
+   :align: center
+   :scale: 60%
+
+   Fermi-surface: Displaying surface for band #2.
+
+.. figure:: _static/fermi3.png
+   :alt: fermisurface3
+   :align: center
+   :scale: 60%
+
+   Fermi-surface: Displaying surface for band #2.
+
+.. figure:: _static/fermi4.png
+   :alt: fermisurface4
+   :align: center
+   :scale: 60%
+
+   Fermi-surface: Displaying merged view for band #2 and #3.
+
+A few more graphics generated from CINEMAS-view, for different cases can be found :ref:`here<Fermi-Surface>`. 
+
+Robocrystallographer
+====================
+
+`Robocrystallographer <https://hackingmaterials.lbl.gov/robocrystallographer/index.html>`_, a Python based external package with a command-line interface 
+is graphically integrated to 
+the CINEMAS-view. This tool generates text description of a given structure. CINEMAS-view provides a seamless graphical interface to this otherwise 
+command-line based package. CINEMAS-view displays the text description of the structure 
+displayed in the active tab, which is generated by Robocrystallographer. All the usage-options originally available for this 
+package are integrated to its GUI in CINEMAS-view. Below are some snapshots of the usage of CINEMAS-view's GUI to 
+Robocrystallographer. 
+
+Figure below shows description of a structure in Latex format with default options of robocrystallographer package.
+
+.. figure:: _static/robocrys1.png
+   :alt: robocrys1
+   :align: center
+   :scale: 60%
+
+   Robocrystallographer in CINEMAS: window with default options, and description shown in Latex format.
+
+.. figure:: _static/robocrys2.png
+   :alt: robocrys2
+   :align: center
+   :scale: 40%
+
+   Robocrystallographer in CINEMAS: Description of two structures from two different active tabs of CINEMAS-view.
+
+.. figure:: _static/robocrys3.png
+   :alt: robocrys3
+   :align: center
+   :scale: 40%
+
+   Robocrystallographer in CINEMAS: Comparison of description of the same structure with 'describe symmetry labels' OFF, 
+   and bond-length decimal places set to 4.
+   
+
+Visualize magnetic configuration
+==================================
+
+CINEMAS can visualize collinear or non-collinear magnetic configuration automatically from a workflow, if it contains valid calculation and respective files.
+This requires no re-formatting of files. Display can be easily toggled between ordering from input or that from the output, for easy comparison.
+Double-click on arrows instantly displays the value of magnetic moment.
+Appearance of arrows representing a magnetic ordering, can be completely customized and exported to 
+graphics of publication-standard.
+
+.. toctree::
+    magview
+
+Visualize forces on a computes structure
+==========================================
+
+CINEMAS can display forces on a computed structure directly by loading a workflow containing a valid calculation and respective files. As a universal behavior this 
+requires no re-formatting. And forces can be visualized automatically. 
+Complete customization of appearance is available to export publication-standard graphics.
+
+.. toctree::
+    forceview

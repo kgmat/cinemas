@@ -1,0 +1,98 @@
+.. title:: CINEMAS team
+
+==========================
+Developers' group members
+==========================
+
+.. image:: _static/Seung-Cheol-Lee.png
+   :alt: SCLEE
+   :scale: 25%
+   
+| Dr. Seung-Cheol-Lee (Principal Investigator)
+| Director, IKST Bengaluru INDIA
+
+.. image:: _static/kapil.png
+   :alt: KG
+   :scale: 20%   
+
+| Dr. Kapil Gupta (Main coordinator & developer-in-charge)
+| Research Scientist, IKST Bengaluru INDIA
+
+.. image:: _static/satadeep-bhattacharjee.png
+   :alt: SB
+   :scale: 25%
+
+| Dr. Satadeep Bhattacharjee (Coordinator)
+| Head R&D, IKST Bengaluru INDIA
+
+==========================
+Advisory board members
+==========================
+
+.. image:: _static/no-image.jpg
+   :alt: SCLEE
+   
+| Prof. Ki-Ha Hong (Advisor)
+| Hanbat University, Deajeon 
+
+.. image:: _static/no-image.jpg
+   :alt: KG
+
+| Prof. Hyung Jun Kim (Advisor)
+| KAIST, Deajeon
+
+.. image:: _static/no-image.jpg
+   :alt: SB
+
+| Dr. Jung Hae Choi (Advisor)
+| KIST, Seoul
+
+.. image:: _static/no-image.jpg
+   :alt: SB
+
+| Prof. Umesh Waghmare (Advisor)
+| JNCASR, Bengaluru INDIA
+
+==========================
+Credits
+==========================
+
+.. image:: _static/Seung-Cheol-Lee.png
+   :alt: SCLEE
+   :scale: 25%
+   
+| Dr. Seung-Cheol-Lee (Principal Investigator)
+| Concept, Design, NEB code
+
+.. image:: _static/kapil.png
+   :alt: KG
+   :scale: 25%
+
+| Dr. Kapil Gupta (Main coordinator)
+| Concept, Design, UI/UX, testing, Structure manager(Surface Builder), 
+| Modules' development and Coordination
+
+.. image:: _static/satadeep-bhattacharjee.png
+   :alt: SB
+   :scale: 25%
+
+| Dr. Satadeep Bhattacharjee (Coordinator)
+| Structure utility, NEB code
+
+.. image:: _static/ambika.jpg
+   :alt: ambika
+
+| Dr. Ambika Prasad Jena(Earlier at IKST)
+| Structure utility
+
+.. image:: _static/aman.jpg
+   :alt: Aman
+
+| Aman Mishra(Ex intern at IKST from IIT Bhubaneswar)
+| Structure Manager(Surface Builder)
+
+.. image:: _static/krishnan.jpg
+   :alt: krishnan
+
+| Krishnan R(Ex intern at IKST from IIT Bhubaneswar)
+| Materials-project importer, Cluster-expansion

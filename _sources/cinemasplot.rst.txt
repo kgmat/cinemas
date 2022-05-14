@@ -1,0 +1,110 @@
+.. title:: CINEMAS-Plot
+.. _cinplot-components:
+
+============
+CINEMAS-plot
+============
+
+.. |hide| image:: _static/hide-job.png
+.. |indicator| image:: _static/input-indicator.png
+.. |star| image:: _static/star-job.png
+.. |visual| image:: _static/visual.png
+.. |plot| image:: _static/plot.png
+.. |snapshot| image:: _static/snapshot.png
+.. |submit| image:: _static/submit.png
+.. |child| image:: _static/child-job.png
+.. |name| image:: _static/job-name.png
+.. |color| image:: _static/color-code.png
+.. |surf| image:: _static/surf-icon.png
+
+*CINEMAS-plot* is an integrated component to plot numerical data as graphs of several types, at par with a stand-alone plotting application. 
+*CINEMAS-plot* be envoked directly or through *Analysis*-workspace |plot|, from the CASCADE workflows.
+
+CINEMAS-plot has a table-and-graph layout, where user has control over the table as well as the graph. Data can be imported as a table, from 
+file(s) in .dat or .csv format(as in latest version of CINEMAS). A number of mathematical functions can be operated on columns, to modify 
+the table. 
+
+CINEMAS-plot tables
+====================
+
+Tables in CINEMAS-plot are tailored for DFT utilities. And functions and operations are available to meet 
+frequent requirements of a DFT user.
+
+- New tables can be created.
+- Data can be imported to these tables from files with DAT/CSV formats.
+- Both plain CSV and nested CSV(:numref:`plot5`) are supported in CINEMAS-plot.
+
+.. figure:: _static/plot5.png
+   :name: plot5
+   :align: center
+   :scale: 50%
+
+   CINEMAS-plot tables: Nested CSV loaded as a table, See column #5.
+
+
+- Data from CINEMAS-plot tables can be exported to CSV/DAT file formats.
+- Cells, rows, columns, or regions within a table can be highlighted for references or discussion purposes(:numref:`plot1`, :numref:`plot2`).
+- Change of color available for both, background as well as fonts.
+
+.. figure:: _static/plot1.png
+   :name: plot1
+   :align: center
+   :scale: 60%
+
+   CINEMAS-plot: appearance of table/graph window.
+
+.. figure:: _static/plot2.png
+   :name: plot2
+   :align: center
+   :scale: 40%
+
+   CINEMAS-plot table: color highlighting and available statistical operations.
+
+- Several operations and functions are available for tables. 
+- There are general but advantageous operations. See :numref:`plot4`,
+- There are statistical operations available. See :numref:`plot2`.
+
+.. figure:: _static/plot4.png
+   :name: plot4
+   :align: center
+   :scale: 60%
+
+   CINEMAS-plot table: Available options for tables.
+
+- Both the tables and the graphs, can go full-screen for views and work both. See :numref:`plot2`, :numref:`plot3`. 
+
+.. figure:: _static/plot3.png
+   :name: plot3
+   :align: center
+   :scale: 40%
+
+   CINEMAS-plot: Graph window in full-screen mode.
+
+CINEMAS-plot graphs
+====================
+
+Numeric data from the table(s) can be plotted as several types of graphs:
+
+- Line
+- Line + scatter
+- Scatter
+- Histogram
+- Pie chart
+- Bar plots(Row/Column)
+
+Graphs can be exported to .jpg/.png format with scaling up-to 20X, and vector formats like .ps/.eps/.pdf.
+
+.. figure:: _static/plot_main.png
+   :alt: plot_main
+   :align: center
+   :scale: 40%
+
+   CINEMAS-plot: appearance of table/graph window.
+
+.. figure:: _static/pie+column.png
+   :alt: piecol
+   :align: center
+   :scale: 60%
+
+   A sample graph from data driven computations. 
+

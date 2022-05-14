@@ -1,0 +1,139 @@
+.. title:: How to set up connections in CINEMAS
+.. _setup_connections:
+
+
+========================================================================
+How to setup connections between the local machine and a remote server?
+========================================================================
+
+- Click *Connection* from the main menubar of the CINEMAS screen. See :numref:`conn`
+- **Manage SSH connections** leads to *Connections* workspace, where remote connections can be set up.
+
+.. figure:: _static/conn.png
+   :name: conn
+   :align: center
+   :scale: 30%
+
+   Connections:.
+
+- For the first time set-up, or starting over *Connections* workspace screen appears as shown in :numref:`conn-3`.
+
+.. figure:: _static/conn3.png
+   :name: conn-3
+   :align: center
+   :scale: 30%
+
+   Connections:.
+
+.. |connect| image:: _static/connect.png 
+.. |addconn| image:: _static/add-conn.png 
+
+- The button **Add connections** adds a new connection with a choice of job-scheduler.
+   
+   * Connection$i$ is the default connec-name. **i** is the number of connection.
+   * **Set as default** can be marked for a connection, to which automatic-modules will submit calculations if there are more than one connections established.  
+   * The current version of CINEMAS supports TORQUE, MOAB, OTP-type and localhost(VASP installed without any scheduler).
+   * Along with the choice of scheduler, a connection to remote-server can be established by entering IP address, and user credentials by clicking |connect| button.
+   * See :numref:`conn-4`, :numref:`conn-5`, and :numref:`conn-6`.
+
+.. figure:: _static/conn4.png
+   :name: conn-4
+   :align: center
+   :scale: 30%
+
+   Connections:.
+
+.. figure:: _static/conn5.png
+   :name: conn-5
+   :align: center
+   :scale: 30%
+
+   Connections:.
+
+.. figure:: _static/conn6.png
+   :name: conn-6
+   :align: center
+   :scale: 30%
+
+   Connections:.
+
+- Once the connection is established(:numref:`conn-7`), remote-server-location, submit-command, and submit-script(if any) has to be defined.  
+
+   * **Remote-server location:** User has to define remote-server-location. *e.g.* /home/username/CINEMAS/ or similar.
+   * **Submit command:** User has to define command along with arguments if any. *E.g.* qsub/msub/*'mpirun -np 4 vasp > vasp.out &'*.
+   * **Submit script:** If it is needed, browse the script to submit a calculation on the remote-server.
+   * **Save:** The *Save* button can be used to save a connection with user-credentials, command, submit-script path.
+   * **Load connections:** This button loads a previously saved connections.
+   * **Auto connect:** This check-box can be ticked, if CINEMAS should load all the connections saved, right after it launches.
+   * :numref:`conn-8` shows a case of established connection, will all required details filled in.
+
+.. figure:: _static/conn7.png
+   :name: conn-7
+   :align: center
+   :scale: 30%
+
+   Connections:.
+
+.. figure:: _static/conn8.png
+   :name: conn-8
+   :align: center
+   :scale: 30%
+
+   Connections:.
+
+- **Multi-hop connections:** At times, for various reasons(security primarily) connection to a remote compute-server is established through gateway-server(s).
+   
+   * By clicking |addconn| button next to IP address of an established connection, one more *server* field appears(:numref:`conn-9`). 
+   * As explained in previous steps, by providing IP, and user-credentials another connection can be established hopping through the previous connection(:numref:`conn-10`).
+   * :numref:`conn-11` is a scenario of a connection to remote compute-server established by hopping through two gateways.
+
+.. figure:: _static/conn9.png
+   :name: conn-9
+   :align: center
+   :scale: 30%
+
+   Connections:.
+
+.. figure:: _static/conn10.png
+   :name: conn-10
+   :align: center
+   :scale: 30%
+
+   Connections:.
+
+.. figure:: _static/conn11.png
+   :name: conn-11
+   :align: center
+   :scale: 30%
+
+   Connections:.
+
+- **Load connections:** 
+
+   * If saved earlier, connection can be established by loading the details.
+   * This can be done manually(:numref:`conn-12`) by clicking *Load connection* button, or automatically if *auto connect* was checked.
+
+.. figure:: _static/conn12.png
+   :name: conn-12
+   :align: center
+   :scale: 30%
+
+   Connections:.
+
+.. figure:: _static/conn13.png
+   :name: conn-13
+   :align: center
+   :scale: 30%
+
+   Connections:.
+
+- :numref:`conn-13` shows two connections established. 
+- Any number of connections can be established between local machine and multiple remote servers.
+- A calculation can be readily submitted to a choice of compute-server. See :numref:`conn-14`.
+
+.. figure:: _static/conn14.png
+   :name: conn-14
+   :align: center
+   :scale: 30%
+
+   Connections:.

@@ -1,0 +1,161 @@
+.. title:: CINEMAS License
+.. _license:
+
+
+============================
+CINEMAS License
+============================
+
+.. note:: 
+
+	CINEMAS General Terms of Use
+	
+	These terms govern the use by You, the user, of the software “CINEMAS” (“Software”
+	hereinafter) which is a software tool developed by Indo-Korea Science and Technology Centre
+	(“IKST”/ Licensor) a Company registered under Section 25 of the Companies Act 1956 having
+	its registered office at 3rd Floor, NCC urban windsor, opposite jakkur aerodrome,
+	new airport road, Bangalore – 560 065, Karnataka India to perform materials simulations in 
+	the area of material science. For the purpose of understanding, the term “Software” shall 
+	mean the software CINEMAS including any and all media and documentation that relate to the Software,
+	and including any future updates or bugfixes to the Software. 
+	The Software has Density Functional Theory (DFT) as a primary method of operation but is not 
+	limited to it. The Software which includes multiple secondary tools considerably reduces the 
+	time required to execute a simulation as compared to the traditionalcommand line mode It also 
+	provides graphical user interface (GUI) based platform to execute DFT method based computer 
+	code and the licence to use the Software includes the use of these DFT based codes for user’s 
+	convenience at user’s liability.
+	By installing and using this Software You acknowledge that You have read and agreed to be
+	bound by these terms of use as specified below.
+
+	1. GRANT OF LICENSE:
+	
+	1.1. Subject to these terms of use, We hereby grant You a royalty-free, non-exclusive license to
+	possess and to use a copy of the Software which provides a GUI based simulation environment
+	only for your authorised work and for no other purpose. You may pursuant to this licence
+	integrate DFT based codes and use it for your convenience at your entire liability without
+	consequence to IKST, the licensor.
+
+	2. LIMITATIONS ON USE:
+	
+	2.1 You may not reverse engineer, decompile, or disassemble the Software or attempt to do so in
+	any manner.
+	2.2 The use of the Software by You shall be strictly in accordance with the terms stated herein
+	2.3. Any changes to the Software may be permitted by IKST at its entire discretion, shall be fully
+	disclosed to IKST and may be subject to separate terms and conditions for use. IKST shall be
+	entitled to use all such changes to Software made by You and to integrate it the next version of
+	the Software for use by any User in accordance with these terms of use.
+
+	3. LIMITATION OF LIABILITY:
+	
+	3.1 Under no circumstances shall IKST be liable for any direct or indirect, incidental,
+	consequential, special or exemplary damages arising out of or in connection with your access or
+	use of or inability to access or use the Software, whether or not the damages were foreseeable
+	and whether or not IKST was advised of the possibility of such damages.
+
+	4. INDEMNITY:
+	
+	4.1 You agree to indemnify, defend, and hold IKST harmless from and against any and all
+	demands, losses, damages, costs, or liability arising out of or relating to your use or misuse of
+	and / or in connection to, the Software or any services offered by IKST.
+
+	5. PERIODIC UPDATE:
+	
+	5.1 The present version of the Software is the subject matter of these Terms of Use; however
+	IKST may deliver periodic updates to You in the future. These Terms of Use including any
+	additional terms included in the General Terms of Use shall equally apply to any updates brought
+	out in the future.
+
+	6. CHANGES TO THESE TERMS OF USE:
+	
+	6.1 IKST reserves the right, from time to time, with or without notice to You, to change these
+	Terms of Use in its sole and absolute discretion.
+	6.2 Your use or your continued use of the Software including as updated means that You agree to
+	be bound by all such changes.
+
+	7. SUPPORT:
+	
+	7.1 You may contact IKST for technical support at cinemas-at-ikst-dot-res-dot-in. IKST shall endeavor to
+	provide the required support within a reasonable period of time but shall not be responsible or
+	liable in any manner to render such support within any time period or at all.
+
+	8. INTELLECTUAL PROPERTY OWNERSHIP:
+	
+	8.1 The Software is licensed, not sold, and accordingly all now known or hereafter known
+	tangible and intangible rights, title, interest, copyrights and moral rights whether or not asserted
+	with respect to the Software are owned and shall continue to be owned by IKST.
+	
+        8.2 The Software is protected by all applicable copyright laws and international treaties including
+	by the Berne Convention and Universal Copyrights Convention
+
+	9. GOVERNING LAW AND JURISDICTION:
+	
+	9.1 These Terms of Use are governed by and shall be construed in accordance with the laws of
+	India.
+
+	9.2 You agree to submit all disputes arising out of or in connection with your use of the Software
+	or these Terms of Use to the exclusive jurisdiction of the Courts at Bangalore, India.
+
+	10. SEVERABILITY:
+	
+	10.1 The invalidity or unenforceability of any of these terms shall not affect the validity or
+	enforceability of any other terms herein, which shall remain in full force and effect.
+
+	THANK YOU.
+
+
+============================
+Third Party Licenses
+============================
+
+Qwt plotting libraries
+=======================
+CINEMAS for its component CINEMAS-plot, greatly acknowledges the use of Qwt plotting libraries 'as-it-is', without any modifications to them.
+A copy of their license can be found :ref:`here<Qwt plot libraries>`.
+
+
+Qt License(LGPL) 
+=======================
+CINEMAS is built within Qt framework, using Qt opensource package. All Qt related libraries are dynamically linked 'as-it-is'.
+A copy of their license can be found :ref:`here<Qt LGPL license>`.
+
+Libssh2 
+=======================
+CINEMAS uses `libssh2 <https://www.libssh2.org/>`_ to establish connections between local machine and remote servers. A copy of its license can 
+be found :ref:`here<Libssh2 license>`.
+
+Pymatgen  
+=======================
+CINEMAS uses `Pymatgen <https://pymatgen.org/>`_ (as-it-is without making any changes to their source-code) to handle CIF formats and for materials-project importer. A copy of its license can be found :ref:`here<Pymatgen license>`.
+
+Robocrystallographer_License 
+=============================
+CINEMAS uses `Robocrystallographer <https://hackingmaterials.lbl.gov/robocrystallographer/index.html>`_ (as-it-is without making any changes to their source-code) to describe structures. A copy of its license can be found :ref:`here<Robocrystallographer license>`.
+
+
+Miniconda
+===========
+CIENAMS uses `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_ to provide python environment. A copy of its lincese can be found 
+:ref:`here<Miniconda license>`.
+
+SpgLib
+===========
+CIENAMS uses `spglib <https://atztogo.github.io/spglib/>`_ for structural utility. A copy of its lincese can be found 
+:ref:`here<Spglib license>`.
+
+Xpdf
+===========
+CIENAMS uses `Xpdf <https://www.xpdfreader.com/opensource.html>`_ under GPL v3, to export files in ps and eps formats.
+
+Phonopy License
+=================
+Phonopy2.7 is pre-installed on the Miniconda-Python environment bundled with the CINEMAS installer. CINEMAS provides a GUI-interface 
+to Phonopy, without modifying any part of the original Phonopy code. CINEMAS is tested with Phonopy2.6 onwards. Users 
+are free to up/down-grade the version.
+
+Phonopy is available under New BSD licence, from version 1.3. (LGPL from ver. 0.9.3 to version 1.2.1., GPL to version 0.9.2.)
+
+Seekpath 
+=============
+
+`Seekpath <https://github.com/giovannipizzi/seekpath>`_ program is pre-installed on the Miniconda-python environment bundled with the CINEMAS installer. CINEMAS provides a GUI for Phonopy execution, and 
+Phonopy uses seekpath internally. Seekpath is used as-it-is, CINEMAS modifies no part of seekpath source-code. Seekpath is distributed under MIT License, a copy of is lince can be found :ref:`here<Seekpath license>`.

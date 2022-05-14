@@ -1,0 +1,20 @@
+.. title:: train machine learning models in CINEMAS
+.. _trainmodels-module:
+
+
+========================================================================
+How to train models using CINEMAS-GUI
+========================================================================
+
+- :ref:`Analyse the database.<Analyse database for model training>`
+- :ref:`Train a regression model.<Train a regression model in CINEMAS>`
+- :ref:`Train a classification model.<Train a classification model in CINEMAS>`
+
+Analyse database for model training
+============================================================
+
+Train a regression model in CINEMAS
+=================================================================
+
+Train a classification model in CINEMAS
+=================================================================

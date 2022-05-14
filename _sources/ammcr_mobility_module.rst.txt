@@ -1,0 +1,12 @@
+.. title:: Automatic 'AMMCR' mobility module in CINEMAS
+.. _ammcr-auto-module:
+
+
+========================================================================
+How to use AMMCR automatic module to calculate charge mobility
+========================================================================
+
+- :ref:`Start from a structure file.<Calculate charge mobility from scratch using a structure file>`
+
+Calculate charge mobility from scratch using a structure file
+=================================================================

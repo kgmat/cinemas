@@ -1,0 +1,510 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CINEMAS-View &mdash; CINEMAS  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/my_theme.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How to visualize magnetic configuration of atoms from an initial or a computed structure(Mag-View)" href="magview.html" />
+    <link rel="prev" title="How to use Phonopy automatic module" href="phonopysteps.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/cinemas_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">CINEMAS-components:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="components.html">Components of CINEMAS application</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="cascade.html">CASCADE</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cascade.html#workflows">Workflows</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#color-coding-of-workflows">Color coding of workflows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#copy-paste-feature-of-workflows">Copy/Paste feature of workflows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#mark-as-important-feature">‘Mark-as-important’ feature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#import-calculations">Import Calculations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#utility">Utility</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cascade.html#automatic-modules">Automatic Modules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#band-structure-module">Band-structure Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#dos-module">DOS Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#phonopy">Phonopy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#formation-energy-module">Formation Energy Module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cascade.html#connections">Connections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cascade.html#queue">Queue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cascade.html#python-editor">Python Editor</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">CINEMAS-view</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#structure-visualizer">Structure Visualizer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#structure-manager">Structure Manager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fermi-surface-visualizer">Fermi Surface Visualizer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#robocrystallographer">Robocrystallographer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#visualize-magnetic-configuration">Visualize magnetic configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="magview.html">How to visualize magnetic configuration of atoms from an initial or a computed structure(<em>Mag-View</em>)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#visualize-forces-on-a-computes-structure">Visualize forces on a computes structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="forceview.html">How to visualize forces on atoms from a computed structure(<em>Force-View</em>)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cinemasplot.html">CINEMAS-plot</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cinemasplot.html#cinemas-plot-tables">CINEMAS-plot tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasplot.html#cinemas-plot-graphs">CINEMAS-plot graphs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cinemasdraw.html">CINEMAS-draw</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cinemasdraw.html#more-about-cinemas-draw">More about CINEMAS-draw</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Download CINEMAS:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="download.html">How to download CINEMAS</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How to Install:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installing CINEMAS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#installer">Installer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#potential-files-configuration">Potential-files configuration</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">License:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="license.html">CINEMAS License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html#third-party-licenses">Third Party Licenses</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="license.html#qwt-plotting-libraries">Qwt plotting libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#qt-license-lgpl">Qt License(LGPL)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#libssh2">Libssh2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#pymatgen">Pymatgen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#robocrystallographer-license">Robocrystallographer_License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#miniconda">Miniconda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#spglib">SpgLib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#xpdf">Xpdf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#phonopy-license">Phonopy License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#seekpath">Seekpath</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">CINEMAS Help:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="help.html">User forum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html#start-with-cinemas">Start with CINEMAS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="start.html">How to start with CINEMAS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="start.html#create-open-a-new-cinemas-project">Create/open a new CINEMAS project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="start.html#load-dft-engine-input-output-file-s">Load DFT-engine input/output file(s)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="start.html#import-existing-calculation-s">Import existing calculation(s)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="start.html#import-vasp-input-files-from-materials-project-to-cinemas">Import VASP input files from materials-project to CINEMAS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="input-prep.html">How to create input files?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup-connections.html">How to setup connections between the local machine and a remote server?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue.html">How to manage Job status(Queue)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matprojimport.html">How to import input-files/data from Materials-project database</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matprojimport.html#materials-project-interface">Materials-project interface</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="fermisurface.html">How to visualize Fermi-surface in CINEMAS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="fermisurface.html#examples-of-nonmagnetic-al">Examples of Nonmagnetic Al</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="phonopysteps.html">How to use Phonopy automatic module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="phonopysteps.html#phonopy-from-scratch-using-a-structure-file">Phonopy from scratch using a structure file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="elastic_module.html">How to use Elastic automatic module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="elastic_module.html#calculate-elastic-constants-from-scratch-using-a-structure-file">Calculate Elastic constants from scratch using a structure file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="elastic_module.html#calculate-elastic-constants-from-a-bank-template">Calculate Elastic constants from a bank template</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dielectric_module.html">How to use Dielectric automatic module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dielectric_module.html#calculate-dielectric-constants-from-scratch-using-a-structure-file">Calculate Dielectric constants from scratch using a structure file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dielectric_module.html#calculate-dielectric-constants-from-a-bank-template">Calculate Dielectric constants from a bank template</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="surface_module.html">How to use Surface automatic module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="surface_module.html#model-a-surface-slab-from-scratch-using-a-structure-file">Model a surface slab from scratch using a structure file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ammcr_mobility_module.html">How to use AMMCR automatic module to calculate charge mobility</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ammcr_mobility_module.html#calculate-charge-mobility-from-scratch-using-a-structure-file">Calculate charge mobility from scratch using a structure file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="featurizerGUI.html">How to use Featurizer in CINEMAS: an interface to Matminer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="featurizerGUI.html#featurize-from-composition">Featurize from composition</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modeltrainingGUI.html">How to train models using CINEMAS-GUI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modeltrainingGUI.html#analyse-database-for-model-training">Analyse database for model training</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modeltrainingGUI.html#train-a-regression-model-in-cinemas">Train a regression model in CINEMAS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modeltrainingGUI.html#train-a-classification-model-in-cinemas">Train a classification model in CINEMAS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bandstructuresteps.html">Guide to CINEMAS-bandstructure module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bandstructuresteps.html#bandstructure-from-scratch-using-a-structure-file">Bandstructure from scratch using a structure file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bandstructuresteps.html#bandstructure-from-a-blank-template">Bandstructure from a blank template</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="kptsConvergenceModule.html">How to use Kpoints-convergence automatic module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="forceview.html">How to visualize forces on atoms from a computed structure(<em>Force-View</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="magview.html">How to visualize magnetic configuration of atoms from an initial or a computed structure(<em>Mag-View</em>)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="help.html#video-tutorials">Video Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vid.html">Dielectric constants: Automatic Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#elastic-constants-automatic-module">Elastic constants: Automatic Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#bandstructure-automatic-module">Bandstructure: Automatic module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#visualize-magnetic-configurations">Visualize magnetic configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#visualize-forces">Visualize forces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#query-materials-project-database-and-import-vasp-input-files-in-cinemas">Query Materials-project database, and import VASP input files in CINEMAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#visualize-3d-fermi-surface-in-cinemas">Visualize 3D Fermi-surface in CINEMAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#describe-a-structure-in-cinemas-using-robocrystallographer">Describe a Structure in CINEMAS, using Robocrystallographer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#import-external-calculations-to-cinemas-and-post-process">Import external calculations to CINEMAS and post-process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#configuring-potential-file-in-newer-versions-2020">Configuring Potential file in newer versions(2020)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#cinemas-integrated-gui">CINEMAS integrated GUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#setting-up-potential-files">Setting up potential files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#create-workflows-and-input-files">Create workflows and input files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#connection-transfer-files-and-execute">Connection, transfer files and execute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#structure-manager-build-surface-cell">Structure manager: build surface cell</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">The CINEMAS team:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Developers’ group members</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html#advisory-board-members">Advisory board members</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html#credits">Credits</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CINEMAS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="components.html">Components of CINEMAS application</a> &raquo;</li>
+        
+      <li>CINEMAS-View</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cinemas-view">
+<span id="cinview-components"></span><h1>CINEMAS-view<a class="headerlink" href="#cinemas-view" title="Permalink to this headline">¶</a></h1>
+<p><em>CINEMAS-view</em> is and integrated structure visualizer, which can be used not only to visualize a structure and volumetric data, but to modify it and write it to a file in several formats. Current version of CINEMAS supports loading and inter-conversion of CIF, XSF, POSCAR and .vasp (VASP) and .in(Quantum espresso) formats. CIF formats are handled by use of <a class="reference external" href="https://pymatgen.org/">Pymatgen</a> libraries.</p>
+<div class="section" id="structure-visualizer">
+<h2>Structure Visualizer<a class="headerlink" href="#structure-visualizer" title="Permalink to this headline">¶</a></h2>
+<p><em>CINEMAS-view</em> reads all the workflows created within CASCADE, and reads &amp; loads all the compatible files for visualization(for VASP: POSCAR/CONTCAR/CHGCAR/ELFCAR/PARCHG).</p>
+<p>For volumetric data, <em>CINEMAS-view</em> can make difference of two files with asymmetric grid density, visualize and save the interpolated files.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/visualizer-1.png"><img alt="visualizer-1" src="_images/visualizer-1.png" style="width: 732.5px; height: 445.5px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 54 </span><span class="caption-text">CINEMAS-view: Typical look of window. Click to enlarge the image(online only).</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/visualizer-2.png"><img alt="visualizer" src="_images/visualizer-2.png" style="width: 733.0px; height: 445.5px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 55 </span><span class="caption-text">CINEMAS: A look of window with <em>dock-able</em> floating type Workflow-pane, Style-option-pane and info-pane, providing maximum space for visualization. Click to enlarge the image(online only).</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>Check out <a class="reference internal" href="gallery.html#cinemas-view-snaps"><span class="std std-ref">CINEMAS-view snaps</span></a> for several graphics generated from CINEMAS-view.</p>
+<p>Though not directly a part of CINEMAS-view, from <em>input-files:k-points</em> workspace Brillouin zone can be visualized for any given
+structure. Desires k-path can be selected on the screen and corresponding coordinates are exported to KPOINTS(for VASP) file for
+band-structure calculations.</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/bz.png"><img alt="bz" src="_images/bz.png" style="width: 537.5999999999999px; height: 336.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 56 </span><span class="caption-text">CINEMAS: selecting k-path for band-structure calculation.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="structure-manager">
+<h2>Structure Manager<a class="headerlink" href="#structure-manager" title="Permalink to this headline">¶</a></h2>
+<p>Structure-manager is the most important feature of CINEMAS-view. It can be envoked by <img alt="surf" src="_images/surf-icon.png" /> icon from CINEMAS-view toolbar. It allows to manipulate the input structure with respect to various symmetry operations and write it to file. Following functions are available currently with Structure-manager.</p>
+<ul class="simple">
+<li><p>Read the given structure and cleave the surface for desired Miller indices.</p></li>
+<li><p>Choose in-plane vectors for direction as well as repetition.</p></li>
+<li><p>Miller indices of in-plane vectors are updated as the arrow is moved and released.</p></li>
+<li><p>Create surface cell in different geometry as ‘Periodic and normal’, ‘Periodic bulk like(with minimum atoms)’ or ‘Non-periodic(to create surface slabs)’.</p></li>
+<li><p>Increase/decrease number of layers in slab, either by layer-by-layer mode or by giving thickness(either no. of layers or in Angstroms).</p></li>
+<li><p>Apply mirror symmetry along XY, YZ or XZ planes.</p></li>
+<li><p>Add adsorbate molecules directly.</p></li>
+<li><p>Translate or rotate adsorbate molecule by mouse or keyboard.</p></li>
+<li><p>Restrict degree of freedom for layers or atoms for atomic relaxation(Selective Dynamics for VASP).</p></li>
+<li><p>Add or substitute atoms in the cell.</p></li>
+<li><p>Scalar/vector type supercell can be created. For example, <span class="math notranslate nohighlight">\(2\times2\times 1\)</span> or <span class="math notranslate nohighlight">\(\sqrt{2}\times\sqrt{2}\times 1\)</span> type of supercell.</p></li>
+</ul>
+<p>A video tutorial is available <a class="reference external" href="https://youtu.be/GcWaBmAIXYA">here</a>, on how to create a surface cell or slab from any bulk cell.</p>
+<div class="figure align-center" id="id5">
+<a class="reference internal image-reference" href="_images/surface-gif.gif"><img alt="structmangrgif" src="_images/surface-gif.gif" style="width: 647.4px; height: 496.2px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 57 </span><span class="caption-text">Structure manager features through animated image.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="fermi-surface-visualizer">
+<h2>Fermi Surface Visualizer<a class="headerlink" href="#fermi-surface-visualizer" title="Permalink to this headline">¶</a></h2>
+<p>If a valid calculation for Fermi-surface exists, CINEMAS can automatically read the calculation workflow and display Fermi-surface for the choice of bands selected. High quality graphics can be exported for publication purpose.</p>
+<p>Below is one example of Fermi-surface for non-magnetic Al in its bulk structure.</p>
+<p>From CINEMAS-view, button ‘FS’ invokes ‘Fermi-surface’ and a dialogue box displays information regarding the calculation. CINEMAS can selectively display Fermi-surface for a single or a group of bands:</p>
+<div class="figure align-center" id="id6">
+<a class="reference internal image-reference" href="_images/fermi1.png"><img alt="fermisurface1" src="_images/fermi1.png" style="width: 303.3px; height: 251.1px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 58 </span><span class="caption-text">Fermi-surface: Prompting information about parsed calculation.</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<p>According to the selection, Fermi-surface is displayed for individual band(s) as well as for the combination. Fermi-surfaces for individual bands can be visualized in different schemes as in 1) reciprocal unit cell, 2) BZ or 3) repeated surface in BZ. Following figures display the Fermi-surface for band #2 and #3, as well as a merged view of both.</p>
+<div class="figure align-center" id="id7">
+<a class="reference internal image-reference" href="_images/fermi2.png"><img alt="fermisurface2" src="_images/fermi2.png" style="width: 595.1999999999999px; height: 378.59999999999997px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 59 </span><span class="caption-text">Fermi-surface: Displaying surface for band #2.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id8">
+<a class="reference internal image-reference" href="_images/fermi3.png"><img alt="fermisurface3" src="_images/fermi3.png" style="width: 597.6px; height: 391.8px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 60 </span><span class="caption-text">Fermi-surface: Displaying surface for band #2.</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id9">
+<a class="reference internal image-reference" href="_images/fermi4.png"><img alt="fermisurface4" src="_images/fermi4.png" style="width: 597.0px; height: 387.59999999999997px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 61 </span><span class="caption-text">Fermi-surface: Displaying merged view for band #2 and #3.</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+<p>A few more graphics generated from CINEMAS-view, for different cases can be found <a class="reference internal" href="gallery.html#fermi-surface"><span class="std std-ref">here</span></a>.</p>
+</div>
+<div class="section" id="robocrystallographer">
+<h2>Robocrystallographer<a class="headerlink" href="#robocrystallographer" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://hackingmaterials.lbl.gov/robocrystallographer/index.html">Robocrystallographer</a>, a Python based external package with a command-line interface
+is graphically integrated to
+the CINEMAS-view. This tool generates text description of a given structure. CINEMAS-view provides a seamless graphical interface to this otherwise
+command-line based package. CINEMAS-view displays the text description of the structure
+displayed in the active tab, which is generated by Robocrystallographer. All the usage-options originally available for this
+package are integrated to its GUI in CINEMAS-view. Below are some snapshots of the usage of CINEMAS-view’s GUI to
+Robocrystallographer.</p>
+<p>Figure below shows description of a structure in Latex format with default options of robocrystallographer package.</p>
+<div class="figure align-center" id="id10">
+<a class="reference internal image-reference" href="_images/robocrys1.png"><img alt="robocrys1" src="_images/robocrys1.png" style="width: 601.8px; height: 309.59999999999997px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 62 </span><span class="caption-text">Robocrystallographer in CINEMAS: window with default options, and description shown in Latex format.</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id11">
+<a class="reference internal image-reference" href="_images/robocrys2.png"><img alt="robocrys2" src="_images/robocrys2.png" style="width: 826.0px; height: 372.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 63 </span><span class="caption-text">Robocrystallographer in CINEMAS: Description of two structures from two different active tabs of CINEMAS-view.</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id12">
+<a class="reference internal image-reference" href="_images/robocrys3.png"><img alt="robocrys3" src="_images/robocrys3.png" style="width: 636.0px; height: 436.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 64 </span><span class="caption-text">Robocrystallographer in CINEMAS: Comparison of description of the same structure with ‘describe symmetry labels’ OFF,
+and bond-length decimal places set to 4.</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="visualize-magnetic-configuration">
+<h2>Visualize magnetic configuration<a class="headerlink" href="#visualize-magnetic-configuration" title="Permalink to this headline">¶</a></h2>
+<p>CINEMAS can visualize collinear or non-collinear magnetic configuration automatically from a workflow, if it contains valid calculation and respective files.
+This requires no re-formatting of files. Display can be easily toggled between ordering from input or that from the output, for easy comparison.
+Double-click on arrows instantly displays the value of magnetic moment.
+Appearance of arrows representing a magnetic ordering, can be completely customized and exported to
+graphics of publication-standard.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="magview.html">How to visualize magnetic configuration of atoms from an initial or a computed structure(<em>Mag-View</em>)</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="visualize-forces-on-a-computes-structure">
+<h2>Visualize forces on a computes structure<a class="headerlink" href="#visualize-forces-on-a-computes-structure" title="Permalink to this headline">¶</a></h2>
+<p>CINEMAS can display forces on a computed structure directly by loading a workflow containing a valid calculation and respective files. As a universal behavior this
+requires no re-formatting. And forces can be visualized automatically.
+Complete customization of appearance is available to export publication-standard graphics.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="forceview.html">How to visualize forces on atoms from a computed structure(<em>Force-View</em>)</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="magview.html" class="btn btn-neutral float-right" title="How to visualize magnetic configuration of atoms from an initial or a computed structure(Mag-View)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="phonopysteps.html" class="btn btn-neutral float-left" title="How to use Phonopy automatic module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019-2022, Indo-Korea Science and Technology Center, Bengaluru INDIA | Written by Kapil Gupta
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-177210156-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>

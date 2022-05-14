@@ -1,0 +1,7 @@
+.. title:: Kpoints-convergence automatic module in CINEMAS
+.. _kptsConvergence-auto-module:
+
+
+========================================================================
+How to use Kpoints-convergence automatic module
+========================================================================

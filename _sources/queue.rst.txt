@@ -1,0 +1,44 @@
+.. title:: How to track jobs on remote servers
+.. _manage-queue:
+
+
+========================================================================
+How to manage Job status(Queue)
+========================================================================
+
+.. |in-queue| image:: _static/job-in-queue-button.png 
+.. |running| image:: _static/job-running-button.png 
+.. |completed| image:: _static/job-completed-button.png 
+.. |kill| image:: _static/kill-button.png 
+.. |refresh| image:: _static/refresh-ind-button.png 
+
+- Status of all the workflows submitted to a remote server, are displayed in **Queue** workspace on the top-right side of CASCADE window, as shown in the :numref:`queue-exp`
+
+.. figure:: _static/queue-exp.png
+   :name: queue-exp
+   :align: center
+   :scale: 70%
+
+   Queue: A snapshot of CASCADE window with workflows and their *status* displayed in the *Queue* workspace.
+
+.. figure:: _static/queue-win.png
+   :name: queue-win
+   :align: center
+   :scale: 100%
+
+   A close-up snapshot of **Queue** workspace.
+
+.. figure:: _static/queue-des.png
+   :name: queue-des
+   :align: center
+   :scale: 40%
+
+   Description of the status-display of an individual workflow. 
+
+- |in-queue| button: A Job is waiting in queue on the remote server.
+- |running| button: A job is running on the remote server.
+- |completed| button: A job is completed.
+- |kill| button: Kill a job running on the remote server.
+- |refresh| button: Refresh the status of an individual job.
+- **Refresh** button in green color, can be used to refresh the entire list of jobs displayed in the *queue* workspace.
+- **Clear** button in green color, can be used to clear *completed* jobs out the *queue* workspace.

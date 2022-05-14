@@ -1,0 +1,12 @@
+.. title:: Automatic 'Surface' module in CINEMAS
+.. _Surface-auto-module:
+
+
+========================================================================
+How to use Surface automatic module
+========================================================================
+
+- :ref:`Start from a structure file.<Model a surface slab from scratch using a structure file>`
+
+Model a surface slab from scratch using a structure file
+=================================================================

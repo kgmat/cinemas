@@ -1,0 +1,522 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>How to visualize Fermi-surface in CINEMAS &mdash; CINEMAS  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/my_theme.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How to use Elastic automatic module" href="elastic_module.html" />
+    <link rel="prev" title="How to manage Job status(Queue)" href="queue.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/cinemas_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">CINEMAS-components:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="components.html">Components of CINEMAS application</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cascade.html">CASCADE</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cascade.html#workflows">Workflows</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#color-coding-of-workflows">Color coding of workflows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#copy-paste-feature-of-workflows">Copy/Paste feature of workflows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#mark-as-important-feature">‘Mark-as-important’ feature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#import-calculations">Import Calculations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#utility">Utility</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cascade.html#automatic-modules">Automatic Modules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#band-structure-module">Band-structure Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#dos-module">DOS Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#phonopy">Phonopy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cascade.html#formation-energy-module">Formation Energy Module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cascade.html#connections">Connections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cascade.html#queue">Queue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cascade.html#python-editor">Python Editor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cinemasview.html">CINEMAS-view</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#structure-visualizer">Structure Visualizer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#structure-manager">Structure Manager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#fermi-surface-visualizer">Fermi Surface Visualizer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#robocrystallographer">Robocrystallographer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#visualize-magnetic-configuration">Visualize magnetic configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="magview.html">How to visualize magnetic configuration of atoms from an initial or a computed structure(<em>Mag-View</em>)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasview.html#visualize-forces-on-a-computes-structure">Visualize forces on a computes structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="forceview.html">How to visualize forces on atoms from a computed structure(<em>Force-View</em>)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cinemasplot.html">CINEMAS-plot</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cinemasplot.html#cinemas-plot-tables">CINEMAS-plot tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cinemasplot.html#cinemas-plot-graphs">CINEMAS-plot graphs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cinemasdraw.html">CINEMAS-draw</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cinemasdraw.html#more-about-cinemas-draw">More about CINEMAS-draw</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Download CINEMAS:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="download.html">How to download CINEMAS</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">How to Install:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installing CINEMAS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#installer">Installer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#potential-files-configuration">Potential-files configuration</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">License:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="license.html">CINEMAS License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html#third-party-licenses">Third Party Licenses</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="license.html#qwt-plotting-libraries">Qwt plotting libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#qt-license-lgpl">Qt License(LGPL)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#libssh2">Libssh2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#pymatgen">Pymatgen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#robocrystallographer-license">Robocrystallographer_License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#miniconda">Miniconda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#spglib">SpgLib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#xpdf">Xpdf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#phonopy-license">Phonopy License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#seekpath">Seekpath</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">CINEMAS Help:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="help.html">User forum</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="help.html#start-with-cinemas">Start with CINEMAS</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="start.html">How to start with CINEMAS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="start.html#create-open-a-new-cinemas-project">Create/open a new CINEMAS project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="start.html#load-dft-engine-input-output-file-s">Load DFT-engine input/output file(s)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="start.html#import-existing-calculation-s">Import existing calculation(s)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="start.html#import-vasp-input-files-from-materials-project-to-cinemas">Import VASP input files from materials-project to CINEMAS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="input-prep.html">How to create input files?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup-connections.html">How to setup connections between the local machine and a remote server?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue.html">How to manage Job status(Queue)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matprojimport.html">How to import input-files/data from Materials-project database</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="matprojimport.html#materials-project-interface">Materials-project interface</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">How to visualize Fermi-surface in CINEMAS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#examples-of-nonmagnetic-al">Examples of Nonmagnetic Al</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="phonopysteps.html">How to use Phonopy automatic module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="phonopysteps.html#phonopy-from-scratch-using-a-structure-file">Phonopy from scratch using a structure file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="elastic_module.html">How to use Elastic automatic module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="elastic_module.html#calculate-elastic-constants-from-scratch-using-a-structure-file">Calculate Elastic constants from scratch using a structure file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="elastic_module.html#calculate-elastic-constants-from-a-bank-template">Calculate Elastic constants from a bank template</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dielectric_module.html">How to use Dielectric automatic module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dielectric_module.html#calculate-dielectric-constants-from-scratch-using-a-structure-file">Calculate Dielectric constants from scratch using a structure file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dielectric_module.html#calculate-dielectric-constants-from-a-bank-template">Calculate Dielectric constants from a bank template</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="surface_module.html">How to use Surface automatic module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="surface_module.html#model-a-surface-slab-from-scratch-using-a-structure-file">Model a surface slab from scratch using a structure file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ammcr_mobility_module.html">How to use AMMCR automatic module to calculate charge mobility</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ammcr_mobility_module.html#calculate-charge-mobility-from-scratch-using-a-structure-file">Calculate charge mobility from scratch using a structure file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="featurizerGUI.html">How to use Featurizer in CINEMAS: an interface to Matminer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="featurizerGUI.html#featurize-from-composition">Featurize from composition</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modeltrainingGUI.html">How to train models using CINEMAS-GUI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modeltrainingGUI.html#analyse-database-for-model-training">Analyse database for model training</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modeltrainingGUI.html#train-a-regression-model-in-cinemas">Train a regression model in CINEMAS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modeltrainingGUI.html#train-a-classification-model-in-cinemas">Train a classification model in CINEMAS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bandstructuresteps.html">Guide to CINEMAS-bandstructure module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bandstructuresteps.html#bandstructure-from-scratch-using-a-structure-file">Bandstructure from scratch using a structure file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bandstructuresteps.html#bandstructure-from-a-blank-template">Bandstructure from a blank template</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="kptsConvergenceModule.html">How to use Kpoints-convergence automatic module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="forceview.html">How to visualize forces on atoms from a computed structure(<em>Force-View</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="magview.html">How to visualize magnetic configuration of atoms from an initial or a computed structure(<em>Mag-View</em>)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="help.html#video-tutorials">Video Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vid.html">Dielectric constants: Automatic Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#elastic-constants-automatic-module">Elastic constants: Automatic Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#bandstructure-automatic-module">Bandstructure: Automatic module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#visualize-magnetic-configurations">Visualize magnetic configurations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#visualize-forces">Visualize forces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#query-materials-project-database-and-import-vasp-input-files-in-cinemas">Query Materials-project database, and import VASP input files in CINEMAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#visualize-3d-fermi-surface-in-cinemas">Visualize 3D Fermi-surface in CINEMAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#describe-a-structure-in-cinemas-using-robocrystallographer">Describe a Structure in CINEMAS, using Robocrystallographer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#import-external-calculations-to-cinemas-and-post-process">Import external calculations to CINEMAS and post-process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#configuring-potential-file-in-newer-versions-2020">Configuring Potential file in newer versions(2020)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#cinemas-integrated-gui">CINEMAS integrated GUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#setting-up-potential-files">Setting up potential files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#create-workflows-and-input-files">Create workflows and input files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#connection-transfer-files-and-execute">Connection, transfer files and execute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vid.html#structure-manager-build-surface-cell">Structure manager: build surface cell</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">The CINEMAS team:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Developers’ group members</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html#advisory-board-members">Advisory board members</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html#credits">Credits</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CINEMAS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="help.html">User forum</a> &raquo;</li>
+        
+      <li>How to visualize Fermi-surface in CINEMAS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-to-visualize-fermi-surface-in-cinemas">
+<span id="view-fermisurface"></span><h1>How to visualize Fermi-surface in CINEMAS<a class="headerlink" href="#how-to-visualize-fermi-surface-in-cinemas" title="Permalink to this headline">¶</a></h1>
+<p>CINEMAS can visualize Fermi-surface in its component CINEMAS-view.</p>
+<p>Fermi-surface calculation can be performed using CINEMAS, and then CINEMAS-view can display 3D Fermi-surface automatically from VASP output files.</p>
+<p>Alternatively, a folder containing VASP files of a Fermi-surface calculation can be imported to CINEMAS, and then 3D Fermi-surface can be visualized in CINEMAS-view.</p>
+<div class="section" id="examples-of-nonmagnetic-al">
+<h2>Examples of Nonmagnetic Al<a class="headerlink" href="#examples-of-nonmagnetic-al" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="#al-fermi-calc"><span class="std std-numref">Fig. 142</span></a> shows a workflow loaded in CINEMAS. This calculation could be performed within CINEMAS, or imported to CINEMAS.</p></li>
+</ul>
+<div class="figure align-center" id="al-fermi-calc">
+<a class="reference internal image-reference" href="_images/fermi_surface_1.png"><img alt="_images/fermi_surface_1.png" src="_images/fermi_surface_1.png" style="width: 807.6px; height: 152.4px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 142 </span><span class="caption-text">Workflow displaying a Fermi-surface calculation for <em>Al-Nonmagnetic</em> in CASCADE.</span><a class="headerlink" href="#al-fermi-calc" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>Once can switch to CINEMAS-view by clicking the icon on the workflow or directly as highlighted in <a class="reference internal" href="#switch-view-fs"><span class="std std-numref">Fig. 143</span></a></p></li>
+</ul>
+<div class="figure align-center" id="switch-view-fs">
+<a class="reference internal image-reference" href="_images/fermi_surface_2.png"><img alt="_images/fermi_surface_2.png" src="_images/fermi_surface_2.png" style="width: 805.1999999999999px; height: 154.2px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 143 </span><span class="caption-text">Switch to CINEMAS-view to view Fermi-surface there.</span><a class="headerlink" href="#switch-view-fs" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>Left pan on CINEMAS-view, shows a tree of workflows and list of files supported by CINEMAS-view therein.</p></li>
+<li><p>Visualization need not to be set for <strong>POSCAR</strong> necessarily for Fermi-surface visualization.</p></li>
+<li><p>Any file(<em>POSCAR/CONTCAR/PARCHG/LOCPOT/ELFCAR/CHGCAR</em>) can be visualized from the workflow, <em>Al-Nonmagnetic</em> in this example(See <a class="reference internal" href="#invoke-fs"><span class="std std-numref">Fig. 144</span></a>).</p></li>
+</ul>
+<div class="figure align-center" id="invoke-fs">
+<a class="reference internal image-reference" href="_images/fermi_surface_4.png"><img alt="_images/fermi_surface_4.png" src="_images/fermi_surface_4.png" style="width: 806.4px; height: 546.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 144 </span><span class="caption-text">CINEMAS-view displaying the structure from the workflow <em>Al-Nonmagnetic</em> from CASCADE.</span><a class="headerlink" href="#invoke-fs" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p><strong>Fermi-surface</strong> workspace can be invoked by the button <strong>FS</strong> as highlighted in the <a class="reference internal" href="#invoke-fs"><span class="std std-numref">Fig. 144</span></a> or <a class="reference internal" href="#fs1"><span class="std std-numref">Fig. 145</span></a>.</p></li>
+</ul>
+<div class="figure align-center" id="fs1">
+<a class="reference internal image-reference" href="_images/fermi_surface_3.png"><img alt="_images/fermi_surface_3.png" src="_images/fermi_surface_3.png" style="width: 807.6px; height: 546.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 145 </span><span class="caption-text">Invoking <em>Fermi-surface</em> workspace from the CINEMAS-view toolbar.</span><a class="headerlink" href="#fs1" title="Permalink to this image">¶</a></p>
+</div>
+<ul>
+<li><p>Invoking Fermi-surface workspace, prompts a window as shown in <a class="reference internal" href="#fs1"><span class="std std-numref">Fig. 145</span></a>. This displays a few informations about the system, in this example <strong>Al-Nonmagnetic</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>No. of band.</p></li>
+<li><p>The value of Fermi-energy.</p></li>
+<li><p>Type of system: Magnetic or Non-Magnetic.</p></li>
+<li><p>Bands crossing or NOT crossing Fermi-level, along with respective band indices</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><a class="reference internal" href="#bandselect"><span class="std std-numref">Fig. 146</span></a> shows how different options can be selected to visualize Fermi-surface.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#bandselect"><span class="std std-numref">Fig. 146</span></a>-(a): All the bands crossing Fermi-level can be selected for visualization.</p></li>
+<li><p><a class="reference internal" href="#bandselect"><span class="std std-numref">Fig. 146</span></a>-(b): Selective bands crossing Fermi-level can be selected for visualization.</p></li>
+<li><p><a class="reference internal" href="#bandselect"><span class="std std-numref">Fig. 146</span></a>-(c): Selective bands crossing or not crossing Fermi-level can be selected together for visualization.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="figure align-center" id="bandselect">
+<a class="reference internal image-reference" href="_images/bandselectfs.png"><img alt="_images/bandselectfs.png" src="_images/bandselectfs.png" style="width: 835.2px; height: 305.6px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 146 </span><span class="caption-text">Different ways to select bands to visualize Fermi-surface for.</span><a class="headerlink" href="#bandselect" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>For this example, options as shown in <a class="reference internal" href="#bandselect"><span class="std std-numref">Fig. 146</span></a>-(a) are selected.</p></li>
+<li><p>By clicking the <strong>OK</strong> button, CINEMAS-view switches to Fermi-surface visualization, as shown in the <a class="reference internal" href="#fsscreen"><span class="std std-numref">Fig. 147</span></a>.</p></li>
+<li><p>Since, options as shown in the <a class="reference internal" href="#bandselect"><span class="std std-numref">Fig. 146</span></a>-(a) were selected with two bands #2 and #3 crossing the Fermi-level.</p></li>
+<li><p>First tab displays 3D Fermi-surface for band #2.</p></li>
+<li><p>Second tab displays 3D Fermi-surface for band #3.</p></li>
+<li><p>Third tab displays a merged view of band #2 and #3 together(see <a class="reference internal" href="#fsscreen"><span class="std std-numref">Fig. 147</span></a>).</p></li>
+</ul>
+<div class="figure align-center" id="fsscreen">
+<a class="reference internal image-reference" href="_images/fermi_surface_9.png"><img alt="_images/fermi_surface_9.png" src="_images/fermi_surface_9.png" style="width: 806.4px; height: 547.8px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 147 </span><span class="caption-text">Fermi-surface for individual band #2.</span><a class="headerlink" href="#fsscreen" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>On the right side, from <strong>Style Options</strong>, view-mode can be changed, or different style-settings can be applied.</p></li>
+<li><p>For individual bands, default mode of visualization is <strong>Surface in reciprocal unitcell</strong> (<a class="reference internal" href="#fsscreen"><span class="std std-numref">Fig. 147</span></a>).</p></li>
+<li><p>Mode can be changed to <strong>Surface in BZ</strong> (<a class="reference internal" href="#surfinbz"><span class="std std-numref">Fig. 148</span></a>). BZ stands for Brillouin Zone.</p></li>
+</ul>
+<div class="figure align-center" id="surfinbz">
+<a class="reference internal image-reference" href="_images/fermi_surface_10.png"><img alt="_images/fermi_surface_10.png" src="_images/fermi_surface_10.png" style="width: 805.8px; height: 546.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 148 </span><span class="caption-text">Fermi-surface for individual band #2, in <em>surface in BZ</em> mode.</span><a class="headerlink" href="#surfinbz" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>Another mode is <strong>Repeated surface in BZ</strong> (<a class="reference internal" href="#repeatbz"><span class="std std-numref">Fig. 149</span></a>).</p></li>
+</ul>
+<div class="figure align-center" id="repeatbz">
+<a class="reference internal image-reference" href="_images/fermi_surface_11.png"><img alt="_images/fermi_surface_11.png" src="_images/fermi_surface_11.png" style="width: 806.4px; height: 549.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 149 </span><span class="caption-text">Fermi-surface for individual band #2, in <em>Repeated surface in BZ</em> mode.</span><a class="headerlink" href="#repeatbz" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p><a class="reference internal" href="#band3"><span class="std std-numref">Fig. 150</span></a> displays Fermi-surface for band #3, and modes or style-settings can be changed from <strong>Style Options</strong>.</p></li>
+</ul>
+<div class="figure align-center" id="band3">
+<a class="reference internal image-reference" href="_images/fermi_surface_12.png"><img alt="_images/fermi_surface_12.png" src="_images/fermi_surface_12.png" style="width: 807.0px; height: 548.4px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 150 </span><span class="caption-text">Fermi-surface for individual band #3.</span><a class="headerlink" href="#band3" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p><a class="reference internal" href="#fsmerged"><span class="std std-numref">Fig. 151</span></a> displays merged view of Fermi-surfaces for band #2, and #3.</p></li>
+<li><p>Multiple, Line/Color properties can be changed/applied from the <strong>Style Options</strong> as shown on the right side of the Fermi-surface visualizer.</p></li>
+</ul>
+<div class="figure align-center" id="fsmerged">
+<a class="reference internal image-reference" href="_images/fermi_surface_13.png"><img alt="_images/fermi_surface_13.png" src="_images/fermi_surface_13.png" style="width: 804.6px; height: 546.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 151 </span><span class="caption-text">Merged view of Fermi-surfaces for band #2, and #3.</span><a class="headerlink" href="#fsmerged" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>For example, for band #2, and #3 Fermi surface can be shown as wired type instead of solid type of surface(see <a class="reference internal" href="#fswire1"><span class="std std-numref">Fig. 152</span></a> and <a class="reference internal" href="#fswire2"><span class="std std-numref">Fig. 153</span></a>).</p></li>
+<li><p>Importantly, from <strong>Style Options</strong>, <em>Interpolate</em> slider can be used to interpolate Fermi-surface data points, to make surface look smoother.</p></li>
+<li><p>CINEMAS supports interplolation upto 6X.</p></li>
+</ul>
+<div class="figure align-center" id="fswire1">
+<a class="reference internal image-reference" href="_images/fermi_surface_14.png"><img alt="_images/fermi_surface_14.png" src="_images/fermi_surface_14.png" style="width: 805.1999999999999px; height: 547.1999999999999px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 152 </span><span class="caption-text">Displaying Fermi-surface of <em>wired-surface</em> type, for individual band #2.</span><a class="headerlink" href="#fswire1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="fswire2">
+<a class="reference internal image-reference" href="_images/fermi_surface_15.png"><img alt="_images/fermi_surface_15.png" src="_images/fermi_surface_15.png" style="width: 804.6px; height: 546.6px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 153 </span><span class="caption-text">Displaying Fermi-surface of <em>wired-surface</em> type, for individual band #3.</span><a class="headerlink" href="#fswire2" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>Finally, by a single click on the button <img alt="send2draw" src="_images/export_to_drawer_icon.png" />, graphics from the Fermi-surface visualizer can be exported to CINEMAS-draw to create a figure of publication-standard.</p></li>
+<li><p>Graphics from the screen as shown in the <a class="reference internal" href="#fsmerged"><span class="std std-numref">Fig. 151</span></a> is exported to CINEMAS-draw as shown in the <a class="reference internal" href="#fs2draw"><span class="std std-numref">Fig. 154</span></a>.</p></li>
+<li><p>Text-box and the effects are added additionally.</p></li>
+</ul>
+<div class="figure align-center" id="fs2draw">
+<a class="reference internal image-reference" href="_images/fermi_surface_16.png"><img alt="_images/fermi_surface_16.png" src="_images/fermi_surface_16.png" style="width: 805.1999999999999px; height: 546.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 154 </span><span class="caption-text">One-click export of graphics from Fermi-surface viewer to CINEMAS-draw to futher prepare figure of publication-standards. Text box is added separately.</span><a class="headerlink" href="#fs2draw" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p>Fermi-surface visualized within CINEMAS for 1) Nonmagnetic Aluminium <code class="xref std std-numref docutils literal notranslate"><span class="pre">fermi-1</span></code>, 2) Nonmagnetic Copper <code class="xref std std-numref docutils literal notranslate"><span class="pre">fermi-2</span></code>, and 3) Nonmagnetic Titanium <code class="xref std std-numref docutils literal notranslate"><span class="pre">fermi-3</span></code>.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="elastic_module.html" class="btn btn-neutral float-right" title="How to use Elastic automatic module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="queue.html" class="btn btn-neutral float-left" title="How to manage Job status(Queue)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019-2022, Indo-Korea Science and Technology Center, Bengaluru INDIA | Written by Kapil Gupta
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-177210156-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>

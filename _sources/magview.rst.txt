@@ -1,0 +1,72 @@
+.. title:: Visualize Magnetic configuration in CINEMAS
+.. _mag_view:
+
+
+=====================================================================================================
+How to visualize magnetic configuration of atoms from an initial or a computed structure(*Mag-View*)
+=====================================================================================================
+
+- CINEMAS can visualize the magnetic configuration directly from the input and out files.
+- From a workflow containing valid files for a magnetic calculation, if a structure is visualized in CINEMAS-view.
+- One can go to **Mag-view** tab in *Style option* on the right side of the CINEMAS-view window.
+- For VASP code, CINEMAS can directly read magnetic-configuration from INCAR or OUTCAR file. 
+- **Mag-view** can be toggled between 'from input' or 'from output'.
+- If CINEMAS finds 'LNONCOLLINEAR = .TRUE.', it will automatically read magnetic configuration from 'MAGMOM' tag in vector format.
+- Depending upon the toggle switch, CINEMAS will show magnetic configuration either from **INCAR** or **OUTCAR** file.
+- If workflow contains a calculation with only **ISPIN = 2** but does not have a corresponding *MAGMOM* tag, CINEMAS will prompt it with a an exclamation sign in red color, as shown in the figure below.
+- Similarly, if the OUTCAR file has any discrepancy, a red exclamation sign will be prompted by CINEMAS.
+- Appearance of arrows can be customized collectively, for individual species, or for individual spin.
+    * Arrow/tip length/radius can be scaled.
+    * Arrow/tip color can be changed. 
+
+- Depending upon **from input** or **from output** by double-clicking on an arrow, it display the value of magnetic moment for a particular species.
+
+.. figure:: _static/mag1.png
+   :name: mag1
+   :align: center
+   :scale: 50%
+
+   'Force-view' in CINEMAS-view, an example of visualization of g-type configuration, directly by loading workflow. This shows the initial mag. moments values (from INCAR for VASP code).
+
+.. figure:: _static/mag2.png
+   :name: mag2
+   :align: center
+   :scale: 50%
+
+   Instantly, calculated values from the output(from OUTCAR for the VASP code) can be viewed by toggling the switch to *output* as show on the right side.
+
+.. figure:: _static/mag3.png
+   :name: mag3
+   :align: center
+   :scale: 50%
+
+   Double-click on an arrow displays the value of mag. moment. Here **from input**, the arrow shows **2**, an initial value provided as input.
+
+.. figure:: _static/mag4.png
+   :name: mag4
+   :align: center
+   :scale: 50%
+
+   A double-click here shows value of calculated mag. moment **from output**, the arrow here shows **1.6** as compared to **2** from previous figure.
+
+.. figure:: _static/mag6.png
+   :name: mag6
+   :align: center
+   :scale: 60%
+
+   Appearance-settings can be made with respect to different species or spin-type.
+
+.. figure:: _static/mag7.png
+   :name: mag7
+   :align: center
+   :scale: 60%
+
+   CINEMAS will prompt to an erroneous workflow(with a read exclamation mark!), if its a magnetic type of calculation, but valid mag. moment data is missing either **from input** or **from output**. 
+
+.. figure:: _static/mag8.png
+   :name: mag8
+   :align: center
+   :scale: 50%
+
+   CINEMAS can even detect if the calculation is *non-collinear* type, and can display the magnetic configuration, similar to collinear one.
+

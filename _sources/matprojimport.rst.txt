@@ -1,0 +1,140 @@
+.. title:: How to import data from Materials-project
+.. _matproj-import:
+
+
+========================================================================
+How to import input-files/data from Materials-project database
+========================================================================
+
+- CINEMAS has a graphical interface to the `Materials-project database <https://materialsproject.org/>`_.
+- Using an `API key <https://materialsproject.org/dashboard>`_ generated on Materials-project website, their database can be accessed fro CINEMAS.
+- In the current version of CINEMAS, VASP input-files or structures in CIF formats can be imported to CINEMAS or exported to disk.
+
+Materials-project interface
+============================
+- Materials-project interface can be invoked from the menu ``Import >> From Materials Project`` from the CASCADE screen(see :numref:`invoke-mp`).
+
+.. figure:: _static/matproject1.png
+   :name: invoke-mp
+   :align: center
+   :scale: 60%
+
+   Returned resulted from a search, and available options within CINEMAS.
+
+- This leads to a window as shown in the :numref:`mpscreen1`
+
+.. figure:: _static/matproject2.png
+   :name: mpscreen1
+   :align: center
+   :scale: 60%
+
+   Returned resulted from a search, and available options within CINEMAS.
+
+- Symbol-buttons from the periodic table, can be used to enter the elements of a composition or the same can be typed.
+- An API-key is required to be able to perform a search for a composition.
+- Without API-key, if a composition is searched *e.g.* Na-Cl, it will prompt for an API-key(See :numref:`api-prompt`).
+
+.. figure:: _static/matproject3.png
+   :name: api-prompt
+   :align: center
+   :scale: 60%
+
+   Returned resulted from a search, and available options within CINEMAS.
+
+- If an API key is not fed in, search will be declined with an error message, as shown in :numref:`api-error`.
+
+.. figure:: _static/matproj4.png
+   :name: api-error
+   :align: center
+   :scale: 60%
+
+   Returned resulted from a search, and available options within CINEMAS.
+
+- A valid API-key which can be generated from `materialsproject website <https://materialsproject.org/dashboard>`_, has to be entered to query the materialsproject database(:numref:`enter-key`).
+
+.. figure:: _static/matproj5.png
+   :name: enter-key
+   :align: center
+   :scale: 60%
+
+   Returned resulted from a search, and available options within CINEMAS.
+
+- With a valid key, interface queries the database for a given composition, as shown in :numref:`searching`.
+
+.. figure:: _static/matproj6.png
+   :name: searching
+   :align: center
+   :scale: 60%
+
+   Returned resulted from a search, and available options within CINEMAS.
+
+- For a given composition, the database returns multiple entries with a 'materials-id' for each of them(see :numref:`search-return`).
+
+.. figure:: _static/matproj7.png
+   :name: search-return
+   :align: center
+   :scale: 60%
+
+   Returned resulted from a search, and available options within CINEMAS.
+
+- An entry of interest can be selected by a mouse click and its corresponding structure is shown in CIF format, as shown in :numref:`select-entry`.
+
+.. figure:: _static/matproj8.png
+   :name: select-entry
+   :align: center
+   :scale: 60%
+
+   Returned resulted from a search, and available options within CINEMAS.
+
+.. |impall| image:: _static/matproj_import_to_cinemas_all.png
+.. |impcif| image:: _static/matproj_imp_cif_cinemas.png 
+.. |downall| image:: _static/matproj_download_all.png 
+.. |expcif| image:: _static/matproj_exp_cif.png 
+
+
+- Using |impall| button, set of VASP input files can be imported to CINEMAS as a workflow(see :numref:`impallcinemas`). Which can be further used for a desired calculation.
+
+.. figure:: _static/matproj_imp_cinemas_example.png
+   :name: impallcinemas
+   :align: center
+   :scale: 50%
+    
+   Returned resulted from a search, and available options within CINEMAS.
+
+- Please note, as VASP potential files(POTAR) are licensed, materialsproject provides only information about POTCAR, but actually does not provide a POTCAR file unlike INCAR,POSCAR, and KPOINTS files.
+
+.. figure:: _static/matproj_potcar_details.png
+   :name: potcarinfo
+   :align: center
+   :scale: 70%
+    
+   Returned resulted from a search, and available options within CINEMAS.   
+
+- If potential files have been configured within CINEMAS environment as shown in :numref:`potcarauto1`, a POTCAR file will be generated automatically by CINEMAS automatically(:numref:`potcarauto2`).
+
+.. figure:: _static/matproj_potcar_auto_1.png
+   :name: potcarauto1
+   :align: center
+   :scale: 50%
+    
+   Returned resulted from a search, and available options within CINEMAS. 
+
+.. figure:: _static/matproj_potcar_auto_2.png
+   :name: potcarauto2
+   :align: center
+   :scale: 50%
+    
+   Returned resulted from a search, and available options within CINEMAS. 
+
+- Using |downall| button, set of VASP input files can be saved on the disk.
+- Using |impcif| button, only the structure from a 'materials-id' can be imported as a workflow in CINEMAS.
+- :numref:`impcifcinemas` shows importing a cif file from materialsproject as a workflow in CINEMAS.
+
+.. figure:: _static/matproj_import_cif_job.png
+   :name: impcifcinemas
+   :align: center
+   :scale: 50%
+    
+   Returned resulted from a search, and available options within CINEMAS. 
+
+- Using |expcif| button, structure from a 'materials-id' in CIF format can be saved on the disk.

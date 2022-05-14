@@ -1,0 +1,124 @@
+.. title:: CINEMAS-Video-Tutorials
+.. _vid-tut:
+
+==========================================================================================
+Dielectric constants: Automatic Module
+==========================================================================================
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/-haMxXPBIFw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+==========================================================================================
+Elastic constants: Automatic Module
+==========================================================================================
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/ovGEc57StTg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+==========================================================================================
+Bandstructure: Automatic module
+==========================================================================================
+
+.. raw:: html
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/s8LatjV8Zhs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+==========================================================================================
+Visualize magnetic configurations
+==========================================================================================
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/3h4OQYL_rtI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+==========================================================================
+Visualize forces
+==========================================================================
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/cPyyfaEyqlo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+==========================================================================
+Query Materials-project database, and import VASP input files in CINEMAS
+==========================================================================
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/zuk-IZwUDTY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+===========================================================
+Visualize 3D Fermi-surface in CINEMAS
+===========================================================
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/ZWUIdt1LEfg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+===========================================================
+Describe a Structure in CINEMAS, using Robocrystallographer
+===========================================================
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/UtDL97HDczA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+=========================================================
+Import external calculations to CINEMAS and post-process
+=========================================================
+
+.. raw:: html
+
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/dylu_mukzTI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+==================================================
+Configuring Potential file in newer versions(2020)
+==================================================
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/4bvYtaOo1GI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+=====================================
+CINEMAS integrated GUI
+=====================================
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/fLi_nJ7aOwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+   </iframe>
+
+=====================================
+Setting up potential files
+=====================================
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/gb0ESmCuQoY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+=====================================
+Create workflows and input files
+=====================================
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/wgzcrYDbWLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+=======================================
+Connection, transfer files and execute
+=======================================
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/ql5wE9cyMuw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+=======================================
+Structure manager: build surface cell
+=======================================
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/GcWaBmAIXYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

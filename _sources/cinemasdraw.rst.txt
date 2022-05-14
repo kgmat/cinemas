@@ -1,0 +1,181 @@
+.. title:: CINEMAS-Draw
+.. _cindraw-components:
+
+===============
+CINEMAS-draw
+===============
+
+CINEMAS-draw is an integrated tool of CINEMAS, where users can prepare figures for publication or otherwise. CINEMAS-draw can be used as 
+a standalone application to prepare figures from scratch, or the graphics can be exported from CINEMAS-view and CINEMAS-plot directly and 
+further drawings can me made. 
+
+CINEMAS-draw can export graphics in jpg/png formats with up-to 20X scaling, as well as vector formats like ps/eps/pdf.
+
+CINEMAS-draw is not just a basic 'paint' application, some features are:
+
+- Special character and mathematical symbols available through GUI.
+- Mathematical equation(characters based) can be inserted through GUI.
+- Mathematical equation(Latex based) can be inserted. A separate Latex installation is required.
+- Drawings are object based. Once drawn, elements can be moved, dragged or repositioned(powerpoint style).  
+- Drawing elements are depth enabled. For multiple superposed elements, can be brought to front or sent to back.
+- Multiple drawings can be made in tab arrangement, and can be saved on consolidated CINEMAS project.
+
+One can navigate to CINEMAS-draw using 'Drawer' button as shown below:
+
+.. figure:: _static/nav_2_drawer.png
+   :alt: nav_2_drawer
+   :align: center
+   :scale: 60%
+
+   Navigate to CINEMAS-draw.
+
+.. |2draw| image:: _static/export_to_drawer_icon.png
+
+Users can start afresh from CINEMAS-draw or use |2draw| button, from CINEMAS-view(including its Fermi-surface utility) or CINEMAS-plot toolbar 
+to export graphics from there and further draw on them or use them.
+
+.. figure:: _static/draw_from_view.png
+   :alt: draw_from_view
+   :align: center
+   :scale: 60%
+
+   Export graphics from CINEMAS-view.
+
+.. figure:: _static/draw_from_plot.png
+   :alt: draw_from_plot
+   :align: center
+   :scale: 60%
+
+   Export graphics from CINEMAS-plot.
+
+Figures can be prepared by mixing several graphics from CINEMAS-view or CINEMAS-plot. One such example is shown below:
+
+.. figure:: _static/drawer_sample.png
+   :alt: drawer_sample
+   :align: center
+   :scale: 60%
+
+   Exporting and mixing graphics from CINEMAS-plot and CINEMAS-view, to prepare a figure.
+
+.. figure:: _static/drawsample1.png
+   :alt: drawsample1
+   :align: center
+   :scale: 60%
+
+   A sample drawing created and exported from CINEMAS-draw. Structure shown is directly exported from CINEMAS-view.
+
+
+More about CINEMAS-draw
+========================
+
+.. |new_draw| image:: _static/new-drawing.png
+.. |insert_draw| image:: _static/insert_image.png
+.. |shapes_menu| image:: _static/shapes_menu.png
+.. |crop_draw| image:: _static/crop_draw.png
+.. |rubber_select| image:: _static/rubber_select.png
+.. |export_draw| image:: _static/export_draw.png
+.. |export_2_draw| image:: _static/export_to_drawer_icon.png
+
+Drawings can be made in CINEMAS-draw by:
+
+- Starting from a blank page using the icon |new_draw| from CINEMAS-draw toolbar.
+
+OR
+
+- Exporting graphics from CINEMAS-view/Fermi-surface/CINEMAS-plot by clicking the icon |export_2_draw| from their respective toolbar.
+
+The following is CINEMAS-draw parent window, and multiple drawings can be created in multiple *tabs*, and all of them 
+can be saved in main CINEMAS project file.
+
+.. figure:: _static/nav_2_drawer.png
+        :name: draw_window
+        :align: center
+        :scale: 80%
+        
+        Snapshot of CINEMAS-draw window.
+
+**From the toolbar:**
+
+- Add a blank page within CINEMAS-draw by clicking  |new_draw|  icon.
+- A click on this button creates a new tab with a blank canvas.
+- Images from disk can be inserted by clicking the icon |insert_draw|.
+- A shape from the list can be selected and drawn on the canvas, using the icon |shapes_menu|
+- **Style Options** provides properties console, as shown in :numref:`latex1`.
+
+.. figure:: _static/shapes_list.png
+        :name: shapes_list
+        :align: center
+        :scale: 80%
+        
+        CINEMAS-draw: snapshot of menu showing list of available shapes from the toolbar.
+
+.. figure:: _static/draw_shapes_drawn.png
+        :name: shapes_drawn
+        :align: center
+        :scale: 40%
+        
+        Available shapes actually drawn on the canvas. 
+        Click on the image for its original size and resolution.
+
+- An area on the canvas can be selected for various purposes by using the icon |rubber_select|.
+- Images can be cropped to the selected area by using the icon |crop_draw|.
+- Images can be saved to file with several formats like JPG/PNG/EPS/PS/PDF.
+- Scaling up-to 30X is available for raster(JPG/PNG) formats.
+
+**Available properties are:**
+
+- Line properties.
+- Color(Fill/font) properties.
+- Rotation properties.
+- Shadow properties with gradient control.
+- Polygon corner rounding.
+- Transparent drawings(remove BG).
+- Depth control of objects(bring to front/send to back). See :numref:`depth_ctrl`.
+- Insert Latex snippet, See :numref:`latex1`, :numref:`latex2`.
+
+.. figure:: _static/multi_options_draw.png
+        :name: shapes
+        :align: center
+        :scale: 60%
+        
+        Some of the available properties and effects for objects in CINEMAS-draw.
+
+.. figure:: _static/depth_draw.png
+        :name: depth_ctrl
+        :align: center
+        :scale: 100%
+        
+        Depth control for drawing objects.
+
+.. figure:: _static/latex_drawer.png
+        :name: latex1
+        :align: center
+        :scale: 80%
+        
+        Latex snippet in CINEMAS-draw. A latex package has to be installed separately.
+
+.. figure:: _static/equation_drawer.png
+        :name: latex2
+        :align: center
+        :scale: 80%
+        
+        Writing equation in CINEMAS-draw. A latex package has to be installed separately.
+
+Drawings crated within CINEMAS-draw can be exported into raster(JPG/PNG) and vector(PS/EPS/PDF) formats, see :numref:`exprt_drw`.
+Raster images can be scaled up-to 30X while exporting, see :numref:`scale_drw`.
+
+
+
+.. figure:: _static/save_formats_draw.png
+        :name: exprt_drw
+        :align: center
+        :scale: 80%
+        
+        Writing equation in CINEMAS-draw. A latex package has to be installed separately.
+
+.. figure:: _static/save_scale_draw.png
+        :name: scale_drw
+        :align: center
+        :scale: 80%
+        
+        Writing equation in CINEMAS-draw. A latex package has to be installed separately.

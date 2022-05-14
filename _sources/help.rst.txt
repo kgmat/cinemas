@@ -1,0 +1,74 @@
+.. title:: CINEMAS-help
+.. _help:
+
+============================
+User forum
+============================
+
+Users can find CINEMAS users' discussion forum `here <https://ikst.res.in/cinemas/discussion-forum>`_.
+Discussion forum can be used to post your questions, reporting bugs/crash scenarios(we hope you don't find any!) or to download CINEMAS latest version.
+
+============================
+Start with CINEMAS
+============================
+
+.. toctree::
+    start
+.. toctree::
+    input-prep
+.. toctree::
+    setup-connections
+
+- How to submit a workflow over remote-server?
+
+.. toctree::
+    queue
+.. toctree::
+    matprojimport
+.. toctree::
+    fermisurface
+
+.. toctree::
+    phonopysteps
+
+.. toctree::
+    elastic_module
+
+.. toctree::
+    dielectric_module
+
+.. toctree::
+    surface_module
+
+.. toctree::
+    ammcr_mobility_module
+
+.. toctree::
+    featurizerGUI
+
+.. toctree::
+    modeltrainingGUI
+.. toctree::
+    bandstructuresteps
+.. toctree::
+    kptsConvergenceModule
+
+.. toctree::
+    forceview
+
+.. toctree::
+    magview
+
+- :ref:`How to use a DOS module?<DOS Module>`
+- :ref:`How to use Robocrystallographer in CINEMAS<Robocrystallographer>`
+
+============================
+Video Tutorials
+============================
+
+A list of video tutorials is available to understand or use CINEMAS, and its several components.
+
+.. toctree::
+    :maxdepth: 0
+
+    vid

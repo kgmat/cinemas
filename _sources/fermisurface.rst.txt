@@ -1,0 +1,163 @@
+.. title:: How to visualize Fermi-surface in CINEMAS
+.. _view-fermisurface:
+
+
+========================================================================
+How to visualize Fermi-surface in CINEMAS
+========================================================================
+
+CINEMAS can visualize Fermi-surface in its component CINEMAS-view.
+
+Fermi-surface calculation can be performed using CINEMAS, and then CINEMAS-view can display 3D Fermi-surface automatically from VASP output files.
+
+Alternatively, a folder containing VASP files of a Fermi-surface calculation can be imported to CINEMAS, and then 3D Fermi-surface can be visualized in CINEMAS-view.
+
+Examples of Nonmagnetic Al
+============================
+
+- :numref:`al_fermi_calc` shows a workflow loaded in CINEMAS. This calculation could be performed within CINEMAS, or imported to CINEMAS.
+
+.. figure:: _static/fermi_surface_1.png
+   :name: al_fermi_calc
+   :align: center
+   :scale: 60%
+
+   Workflow displaying a Fermi-surface calculation for *Al-Nonmagnetic* in CASCADE.
+
+- Once can switch to CINEMAS-view by clicking the icon on the workflow or directly as highlighted in :numref:`switch_view_fs`
+
+.. figure:: _static/fermi_surface_2.png
+   :name: switch_view_fs
+   :align: center
+   :scale: 60%
+
+   Switch to CINEMAS-view to view Fermi-surface there.
+
+- Left pan on CINEMAS-view, shows a tree of workflows and list of files supported by CINEMAS-view therein.
+- Visualization need not to be set for **POSCAR** necessarily for Fermi-surface visualization.
+- Any file(*POSCAR/CONTCAR/PARCHG/LOCPOT/ELFCAR/CHGCAR*) can be visualized from the workflow, *Al-Nonmagnetic* in this example(See :numref:`invoke-fs`).
+
+.. figure:: _static/fermi_surface_4.png
+   :name: invoke-fs
+   :align: center
+   :scale: 60%
+
+   CINEMAS-view displaying the structure from the workflow *Al-Nonmagnetic* from CASCADE.
+
+- **Fermi-surface** workspace can be invoked by the button **FS** as highlighted in the :numref:`invoke-fs` or :numref:`fs1`.
+
+.. figure:: _static/fermi_surface_3.png
+   :name: fs1
+   :align: center
+   :scale: 60%
+
+   Invoking *Fermi-surface* workspace from the CINEMAS-view toolbar.
+
+- Invoking Fermi-surface workspace, prompts a window as shown in :numref:`fs1`. This displays a few informations about the system, in this example **Al-Nonmagnetic**:
+
+    * No. of band. 
+    * The value of Fermi-energy.
+    * Type of system: Magnetic or Non-Magnetic.
+    * Bands crossing or NOT crossing Fermi-level, along with respective band indices
+
+- :numref:`bandselect` shows how different options can be selected to visualize Fermi-surface.
+
+    * :numref:`bandselect`-(a): All the bands crossing Fermi-level can be selected for visualization.
+    * :numref:`bandselect`-(b): Selective bands crossing Fermi-level can be selected for visualization.
+    * :numref:`bandselect`-(c): Selective bands crossing or not crossing Fermi-level can be selected together for visualization.
+
+
+.. figure:: _static/bandselectfs.png
+   :name: bandselect
+   :align: center
+   :scale: 80%
+
+   Different ways to select bands to visualize Fermi-surface for.
+
+- For this example, options as shown in :numref:`bandselect`-(a) are selected.
+- By clicking the **OK** button, CINEMAS-view switches to Fermi-surface visualization, as shown in the :numref:`fsscreen`.
+- Since, options as shown in the :numref:`bandselect`-(a) were selected with two bands #2 and #3 crossing the Fermi-level.
+- First tab displays 3D Fermi-surface for band #2.
+- Second tab displays 3D Fermi-surface for band #3.
+- Third tab displays a merged view of band #2 and #3 together(see :numref:`fsscreen`).
+
+.. figure:: _static/fermi_surface_9.png
+   :name: fsscreen
+   :align: center
+   :scale: 60%
+
+   Fermi-surface for individual band #2.
+
+- On the right side, from **Style Options**, view-mode can be changed, or different style-settings can be applied.
+
+- For individual bands, default mode of visualization is **Surface in reciprocal unitcell** (:numref:`fsscreen`).
+- Mode can be changed to **Surface in BZ** (:numref:`surfinbz`). BZ stands for Brillouin Zone. 
+
+
+.. figure:: _static/fermi_surface_10.png
+   :name: surfinbz
+   :align: center
+   :scale: 60%
+   
+   Fermi-surface for individual band #2, in *surface in BZ* mode.
+
+- Another mode is **Repeated surface in BZ** (:numref:`repeatbz`). 
+
+.. figure:: _static/fermi_surface_11.png
+   :name: repeatbz
+   :align: center
+   :scale: 60%
+
+   Fermi-surface for individual band #2, in *Repeated surface in BZ* mode.
+
+- :numref:`band3` displays Fermi-surface for band #3, and modes or style-settings can be changed from **Style Options**.
+
+.. figure:: _static/fermi_surface_12.png
+   :name: band3
+   :align: center
+   :scale: 60%
+
+   Fermi-surface for individual band #3.
+
+- :numref:`fsmerged` displays merged view of Fermi-surfaces for band #2, and #3. 
+- Multiple, Line/Color properties can be changed/applied from the **Style Options** as shown on the right side of the Fermi-surface visualizer.
+
+.. figure:: _static/fermi_surface_13.png
+   :name: fsmerged
+   :align: center
+   :scale: 60%
+
+   Merged view of Fermi-surfaces for band #2, and #3.
+
+- For example, for band #2, and #3 Fermi surface can be shown as wired type instead of solid type of surface(see :numref:`fswire1` and :numref:`fswire2`).
+- Importantly, from **Style Options**, *Interpolate* slider can be used to interpolate Fermi-surface data points, to make surface look smoother.
+- CINEMAS supports interplolation upto 6X.
+
+.. figure:: _static/fermi_surface_14.png
+   :name: fswire1
+   :align: center
+   :scale: 60%
+
+   Displaying Fermi-surface of *wired-surface* type, for individual band #2.
+
+.. figure:: _static/fermi_surface_15.png
+   :name: fswire2
+   :align: center
+   :scale: 60%
+
+   Displaying Fermi-surface of *wired-surface* type, for individual band #3.
+
+.. |send2draw| image:: _static/export_to_drawer_icon.png
+
+- Finally, by a single click on the button |send2draw|, graphics from the Fermi-surface visualizer can be exported to CINEMAS-draw to create a figure of publication-standard.
+- Graphics from the screen as shown in the :numref:`fsmerged` is exported to CINEMAS-draw as shown in the :numref:`fs2draw`.
+- Text-box and the effects are added additionally.
+
+.. figure:: _static/fermi_surface_16.png
+   :name: fs2draw
+   :align: center
+   :scale: 60%
+
+   One-click export of graphics from Fermi-surface viewer to CINEMAS-draw to futher prepare figure of publication-standards. Text box is added separately.
+
+- Fermi-surface visualized within CINEMAS for 1) Nonmagnetic Aluminium :numref:`fermi-1`, 2) Nonmagnetic Copper :numref:`fermi-2`, and 3) Nonmagnetic Titanium :numref:`fermi-3`.

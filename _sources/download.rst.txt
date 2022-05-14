@@ -1,0 +1,22 @@
+.. title:: Download CINEMAS 
+
+========================
+How to download CINEMAS
+========================
+
+
+
+Thanks for showing your interest in downloading CINEMAS software.
+
+`Click here <https://ikst.res.in/cinemas/download>`_ to download the latest version of CINEMAS, for your choice of OS: Windows, Linux or MAC-OS.
+
+You can also post your questions on CINEMAS `discussion-forum <https://ikst.res.in/cinemas/discussion-forum>`_.
+
+In case of any problem, you can write to
+
+.. image:: _static/cinemasmail.png
+   :alt: CINEMAS mail
+   :scale: 60%
+   :align: left
+
+

@@ -1,0 +1,2 @@
+# cinemas
+CINEMAS documentation pages
